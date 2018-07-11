@@ -1,0 +1,12 @@
+{
+   "patches-service": "20180705-1125",
+   "screenshot-service": "20180625-0926",
+   "stripe-html-cleaner-service": "20180705-1353",
+   "stripe-html-gen-service": "latest",
+   "stripo-plugin-api-gateway": "20180706-1206",
+   "stripo-plugin-custom-blocks-service": "20180705-1414",
+   "stripo-plugin-details-service": "20180705-1015",
+   "stripo-plugin-documents-service": "20180705-0728",
+   "stripo-plugin-drafts-service": "20180705-0805",
+   "stripo-plugin-image-bank-service": "20180705-0805"
+}
