@@ -34,11 +34,6 @@ a[x-apple-data-detectors] {
     line-height: inherit !important;
 }
 
-@-ms-viewport {
-    width: device-width;
-}
-
-
 /* END OF IMPORTANT */
 
 html,
