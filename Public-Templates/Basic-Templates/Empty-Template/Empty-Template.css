@@ -27,9 +27,6 @@ a[x-apple-data-detectors] {
     font-weight: inherit !important;
     line-height: inherit !important;
 }
-@-ms-viewport {
-    width: device-width;
-}
 /* END OF IMPORTANT */
 html,
 body {
