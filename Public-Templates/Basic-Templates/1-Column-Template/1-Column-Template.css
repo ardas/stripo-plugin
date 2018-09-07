@@ -30,8 +30,14 @@ a[x-apple-data-detectors] {
 	font-weight: inherit !important;
 	line-height: inherit !important;
 }
-@-ms-viewport {
-	width: device-width;
+.es-desk-hidden {
+    display: none;
+    float: left;
+    overflow: hidden;
+    width: 0;
+    max-height: 0;
+    line-height: 0;
+    mso-hide: all;
 }
 /*
 END OF IMPORTANT
@@ -508,11 +514,23 @@ If you don't need responsive layout, please delete this section.
 	.es-m-p20b {
 		padding-bottom: 20px !important;
 	}
-	.es-hidden {
-		display: none !important;
-	}
+	.es-mobile-hidden,
+    	.es-hidden {
+        display: none !important;
+    	}
+    	.es-desk-hidden {
+        display: table-row!important;
+        width: auto!important;
+        overflow: visible!important;
+        float: none!important;
+        max-height: inherit!important;
+        line-height: inherit!important;
+    	}
+    	.es-desk-menu-hidden {
+        display: table-cell!important;
+    	}
 	table.es-table-not-adapt,
-    .esd-block-html table {
+    	.esd-block-html table {
 		width: auto !important;
 	}
 	table.es-social {

@@ -1,0 +1,67 @@
+* IMPORTANT NOTICE * 
+In order to support the implemented features and bug fixes in this release please update the customer's CSS as follows:
+
+1. Remove this class with styles from the Important section in the CSS (this is to support the "Rollover-effect")
+@-ms-viewport {
+    width: device-width;
+}
+
+2. Add this class with styles to the end of "Important" section underneath the attribute a[x-apple-data-detectors]
+
+.es-desk-hidden {
+    display: none;
+    float: left;
+    overflow: hidden;
+    width: 0;
+    max-height: 0;
+    line-height: 0;
+    mso-hide: all;
+}
+
+3. Replace the .es-hidden class in the "Responsive style" section of CSS with this styles
+
+.es-mobile-hidden,
+.es-hidden {
+    display: none !important;
+}
+
+4. Add these classes with styles underneath the .es-mobile-hidden, .es-hidden classes in the "Responsive style" section of CSS 
+
+.es-desk-hidden {
+    display: table-row!important;
+    width: auto!important;
+    overflow: visible!important;
+    float: none!important;
+    max-height: inherit!important;
+    line-height: inherit!important;
+}   
+.es-desk-menu-hidden {
+    display: table-cell!important;
+}
+
+
+* NEW FEATURES *
+
+1. The «Rollover Effect» control has been added to the basic «Image» block, which replaces images with one another by placing a cursor over them.
+2. The «switch to hide elements on mobile or web version» control has been added;
+
+
+* BUG FIXES *
+
+IN:033557. Custom styles in HTML/CSS are being removed;
+IN:033555. The button style does not change when words go to another line;
+IN:033607. It is impossible to change image size in a custom email layout;
+IN:033610. The background color, set in a conditional comment on email in MS Outlook, is not displayed correctly;
+IN:033631. All CSS styles are not combined in the tag «style» when exporting email/template;
+IN:033626. Added accounts are not displayed when exporting emails to the chosen ESP;
+IN:033561. Question marks are being shown when there is no set subject line in the exported OFT file;
+IN:033548. The collaboration ability between email elements and user’s role «View» is shown;
+IN:033543. The spaces for user-specified custom styles are removed;
+IN:033682. Your own templates are not displayed when creating a new email from the folder;
+IN:033674. The name of the added image is replaced with the standard one when you exit the «Image» basic block;
+IN:033642. All text in the block is removed when inserting text with two paragraphs captured;
+IN:033663. If you quickly switch between the «Replace» and «Edit» buttons in the «Image» basic block, the Aviary editor freezes;
+IN:033735. The «Link» field disappears when deleting the «a» tag from the code;
+IN:033652. The style «!important» was cut off” from CSS code;
+IN:033647. The 10px indents after the last icon in the «Soc. networks» basic block have been removed;
+IN:033668. The code editor displays indents in the «Dynamic separator» block.
