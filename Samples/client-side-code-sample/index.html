@@ -5,7 +5,8 @@
     <title>Stripo Plugin Example</title>
     <style>
         #externalSystemContainer {
-            text-align: center;
+            background-color: darkgrey;
+            padding: 5px 0 5px 20px;
         }
         #undoButton, #redoButton {
             display: none;
@@ -18,21 +19,39 @@
             width: calc(100% - 400px);
             float: left;
         }
+        .notification-zone {
+            position: fixed;
+            width: 400px;
+            z-index: 99999;
+            right: 20px;
+            bottom: 80px;
+        }
+        .control-button {
+            border-radius: 17px;
+            padding: 5px 10px;
+            border-color: grey;
+        }
+        #changeHistoryLink {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div id="externalSystemContainer">
         <!--This is external system container where you can place plugin buttons -->
-        <button id="undoButton">Undo</button>
-        <button id="redoButton">Redo</button>
-        <button id="codeEditor">Code editor</button>
+        <button id="undoButton" class="control-button">Undo</button>
+        <button id="redoButton" class="control-button">Redo</button>
+        <button id="codeEditor" class="control-button">Code editor</button>
+        <span id="changeHistoryContainer" style="display: none;">Last change: <a id="changeHistoryLink"></a></span>
     </div>
+    <div class="notification-zone"></div>
     <div>
         <!--Plugin containers -->
         <div id="stripoSettingsContainer">Loading...</div>
         <div id="stripoPreviewContainer"></div>
     </div>
 
+    <script type="application/javascript" src="notifications.js"></script>
     <script>
         // Utility methods
         function request(method, url, data, callback) {
@@ -83,8 +102,22 @@
                     locale: 'en',
                     html: template.html,
                     css: template.css,
-                    apiBaseUrl: 'https://plugins.stripo.email/api/v1',
+                    notifications: {
+                        info: notifications.info.bind(notifications),
+                        error: notifications.error.bind(notifications),
+                        warn: notifications.warn.bind(notifications),
+                        loader: notifications.loader.bind(notifications),
+                        hide: notifications.hide.bind(notifications),
+                        success: notifications.success.bind(notifications)
+                    },
                     apiRequestData: apiRequestData,
+                    userFullName: 'Plugin Demo User',
+                    versionHistory: {
+                        changeHistoryLinkId: 'changeHistoryLink',
+                        onInitialized: function(lastChangeIndoText) {
+                            $('#changeHistoryContainer').show();
+                        }
+                    },
                     getAuthToken: function (callback) {
                         request('POST', 'https://plugins.stripo.email/api/v1/auth',
                             JSON.stringify({
