@@ -1,0 +1,57 @@
+* IMPORTANT NOTICE * 
+In order to support the implemented features and bug fixes in this release please update the customer's CSS as follows:
+
+1. Replace these styles
+
+.es-m-txt-r a img,
+.es-m-txt-c a img,
+.es-m-txt-l a img {
+ display: inline !important;
+}
+
+with 
+
+.es-m-txt-r img,
+.es-m-txt-c img,
+.es-m-txt-l img {
+       display: inline! important;
+}
+
+
+
+* NEW FEATURES *
+
+1. The «compileEmail» method has been added to the Stripo Plugin JS API that helps to get compiled and compressed HTML code ready to be sent to clients from the editor;
+2. The editor have been translated into Italian and Slovenian languages;
+3. The ability to remember the user’s colors in the palette has been implemented;
+4. A new basic «Timer» block, by using which you can create animated images with countdown timers right in the editor, has been added;
+5. Tracking Email Template Versioning. This feature will allow you to track all changes made in created email template so it will be possible to revert its state to a few changes back.
+
+
+* BUG FIXES *
+
+IN:033989. Editor. The reason for adding the empty < tr > tags to the stripes added from a «Library» of blocks has been fixed;
+IN:033976. Editor. Cannot paste copied text into the text field of the «Banner» basic block;
+IN:033968. Editor. The text formatting panel in the «Text» basic block is duplicated and shifted;
+IN:033966. Editor. It is not possible to set the transparent color of the «Border» control of the «Button» basic block and «Separator» control of the «Menu» basic block;
+IN:033896. Editor. The selected text style is deleted by double clicking on the Backspace key in the «Text» basic block;
+IN:033895. Editor. When turning off custom thumbnail image in the basic «Video» block the information about the image is not removed from the HTML code;
+IN:033891. Editor. A background image set for a container is overlapped by the container’s background color;
+IN:033882. Editor. When inserting containers the indents between them are calculated incorrectly;
+IN:033881. Editor. Work of the library of blocks has been optimized the reason why the editor could get frozen are removed);
+IN:033876. Editor. When a modifier value contains the «>» or «<» characters in a smart-element the smart-element breaks down;
+IN:033868. Editor. When setting a color to the underlined text the color is not applied to the underscore;
+IN:033850. Editor. When replacing copy in the basic «Text» block the new copy does not inherit styles of the previous one;
+IN:033822. Editor. Images set as a background are not exported to the «Images» folder when downloading the email as HTML archive;
+IN:033820. Editor. The list with tags in the library does not fit the screen size if there are more than 20 of them on the list;
+IN:033809. Editor. The option to replace images in the basic «My HTML» block is not displayed;
+IN:033805. Editor. The dynamic divider properties are broken when editing its HTML code;
+IN:033802. Editor. The inscription «Drop here» is not displayed when hiding elements of an email/template;
+IN:033801. Editor. It is impossible to save changes to CSS when previewing or exporting an email/template;
+IN:033797. Plugin. On the plugin configuration page in the statistics section the current billing period is specified incorrectly;
+IN:033790. Editor. The font size is increased when replacing copy in the basic «Text» block;
+IN:033787. Editor. Line break in links does not turn off after preview email/template option has been activated;
+IN:033748. Editor. The set position for a container background image is being reset;
+IN:033665. Editor. It is impossible to remove a menu tab in the basic «Menu» block when resizing the browser window width;
+IN:033604. Editor. Labels and icons of the blocks saved to the library are displayed disproportionately;
+IN:031833. Editor. «href» is removed from the basic «Image» block if the link was not inserted.
