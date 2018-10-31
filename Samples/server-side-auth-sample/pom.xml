@@ -5,7 +5,7 @@
 
     <groupId>com.stripo.plugin.example</groupId>
     <artifactId>auth-service</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

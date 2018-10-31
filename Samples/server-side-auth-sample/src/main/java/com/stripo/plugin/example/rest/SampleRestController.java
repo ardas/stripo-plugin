@@ -10,10 +10,13 @@ import com.stripo.plugin.example.rest.dto.Template;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.PostConstruct;
 
 @RestController
 @CommonsLog
@@ -23,6 +26,17 @@ public class SampleRestController {
 	private String pluginId;
 	@Value("${secretKey}")
 	private String secretKey;
+
+	@PostConstruct
+	public void init() {
+		if (StringUtils.isEmpty(pluginId) || StringUtils.isEmpty(secretKey)) {
+			log.error(
+					"\n----------------------------------------------------------------------------------\n" +
+					"   Please, set 'pluginId' and 'secretKey' values in application.properties file\n" +
+					"----------------------------------------------------------------------------------");
+			System.exit(1);
+		}
+	}
 
 
 	// This endpoint is used to get valid authentication token to communicate with Stripo Plugin Backend
