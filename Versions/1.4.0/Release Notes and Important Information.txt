@@ -1,0 +1,23 @@
+* IMPORTANT NOTICE * 
+No need to update the HTML and/or CSS code of email templates to support this verison of the editor.
+
+
+* NEW FEATURES *
+
+No new features have been added.
+
+
+* BUG FIXES *
+
+IN:033985. Editor. The style «width: 100%» is removed from the HTML code when replacing the image;
+IN:034001. Editor. A white background is displayed in the drop-down list with icon styles in the «Social networks» basic block;
+IN:034067. Editor. The image is not restored in the background of the stripe after reactivation of the control;
+IN:033991. Editor. The bold text style can not be reset through formatting panel of the «Text» basic block;
+IN:034082. Editor. After adding a new container to the email, the menu for interaction with the container can not be opened;
+IN:034084. Editor. The calendar is shifted in the «Timer» basic block;
+IN:034031. Editor. Error in HTML markup when interacting with the code editor in the «head» of the email template;
+IN:034103. Editor. The aspect ratio error does not disappear or does not appear when using the «Rollover» effect in the «Image» basic block;
+IN:033986. Editor. When replacing text of a different style, two different tags appear in the «Text» basic block;
+IN:034102. Editor. It is impossible to add a block from the «Library» to the strip that has already been selected;
+IN:034123. Editor. The code editor button is active in the selected «Version history» mode;
+IN:034116. Editor. The HTML code validation has been adjusted.
