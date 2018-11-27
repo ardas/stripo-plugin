@@ -10,10 +10,10 @@ The ability to connect own file system tree displayed as a JS popup instead of S
 * BUG FIXES *
 
 IN:034009. The selection of blocks, structures and stripes is not removed when you hover over other elements inside the editor;
-IN:034208. Editor. Unable to replace the image in the «My HTML» basic block;
-IN:034218. Editor. The font name on the formatting panel is not correctly determined;
-IN:034213. Editor. The «a» tag is broken when inserting a special link;
-IN:034028. Editor. The width of the image decreases when it is replaced;
-IN:034167. Editor. The timer functionality does not work with non-valid CSS;
-IN:034025. Editor. Cannot select a standard color in advanced settings of the «Timer» basic block;
-IN:034199. Editor. It is difficult to move the slider to change the size of the dynamic separator.
+IN:034208. Unable to replace the image in the Â«My HTMLÂ» basic block;
+IN:034218. The font name on the formatting panel is not correctly determined;
+IN:034213. The Â«aÂ» tag is broken when inserting a special link;
+IN:034028. The width of the image decreases when it is replaced;
+IN:034167. The timer functionality does not work with non-valid CSS;
+IN:034025. Cannot select a standard color in advanced settings of the Â«TimerÂ» basic block;
+IN:034199. It is difficult to move the slider to change the size of the dynamic separator.
