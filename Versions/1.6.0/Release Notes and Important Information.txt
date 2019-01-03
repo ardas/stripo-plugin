@@ -5,8 +5,8 @@ line-height: 120% !important; in the following places: http://prntscr.com/m2l0xb
 
 * NEW FEATURES *
 
-The «Alignment» control has been added in the basic block «Timer»;
-The Slovenian language has been added to the«Timer» basic block ;
+The «Alignment» control has been added in the «Timer» basic block;
+The Slovenian language has been added to the «Timer» basic block;
 
 
 * BUG FIXES *
@@ -20,4 +20,4 @@ IN:034283. The line-height parameter in copper-style does not change when it is 
 IN:034275. It’s impossible to connect your custom font through the code editor;
 IN:034300. It’s possible to upload a file with an invalid extension to the «Gallery» of images;
 IN:034272. Extra classes appear in the «Button» basic block  after re-entering the email;
-IN:034357. The «Gallery» of images does not work in Safari browser;
+IN:034357. The «Gallery» of images does not work in Safari browser.
