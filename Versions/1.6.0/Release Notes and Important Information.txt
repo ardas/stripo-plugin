@@ -1,6 +1,6 @@
 * IMPORTANT NOTICE * 
 For the correct display of the line height in the mobile version of the email, you need to add in @media styles:
-<strong>line-height: 120% !important;</strong> in the following places: http://prntscr.com/m2l0xb
+line-height: 120% !important; in the following places: http://prntscr.com/m2l0xb
 
 
 * NEW FEATURES *
