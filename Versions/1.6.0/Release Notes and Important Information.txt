@@ -1,0 +1,23 @@
+* IMPORTANT NOTICE * 
+For the correct display of the line height in the mobile version of the email, you need to add in @media styles:
+<strong>line-height: 120% !important;</strong> in the following places: http://prntscr.com/m2l0xb
+
+
+* NEW FEATURES *
+
+The «Alignment» control has been added in the basic block «Timer»;
+The Slovenian language has been added to the«Timer» basic block ;
+
+
+* BUG FIXES *
+
+IN:034141. The height of the empty «Video» basic block alters with the width of the email when it changes;
+IN:034330. The«Timer» basic block is not displayed if you exit the email without waiting for it to be generated;
+IN:034332. A text block is broken when an empty link is added;
+IN:034309. After removing the text in the block, it’s impossible to set the cursor in an empty field the first time;
+IN:034320. It’s impossible to set the UTM-tags in the links that contain curly brackets;
+IN:034283. The line-height parameter in copper-style does not change when it is being changed in the menu «Appearance» – «General»;
+IN:034275. It’s impossible to connect your custom font through the code editor;
+IN:034300. It’s possible to upload a file with an invalid extension to the «Gallery» of images;
+IN:034272. Extra classes appear in the «Button» basic block  after re-entering the email;
+IN:034357. The «Gallery» of images does not work in Safari browser;
