@@ -1,0 +1,28 @@
+* IMPORTANT NOTICE * 
+For correct work of the button text size in the mobile version of the email, you need to add in @media styles:
+selector "a" in the following place: 
+.es-button {
+        ...
+    }
+	
+http://prntscr.com/majj3a
+
+
+* NEW FEATURES *
+
+Image editor has been replaced with Pixie.
+
+
+* BUG FIXES *
+
+IN:034392. Editor. HTML tabs overlap when opening CSS tabs in the code editor;
+IN:034408. Editor. The containers inside the structure are not correctly aligned when adding indents to the structure;
+IN:034344. Editor. It is impossible to apply a color to the text if setting it without the «#» symbol;
+IN:034374. Editor. It is impossible to change the size of the button text for the mobile version of the email;
+IN:034404. Editor. When you remove an image the white background of the menu item icon is displayed in the «Menu» basic block on the settings panel;
+IN:034395. Editor. The controls in the smart elements are shifted;
+IN:034407. Editor. It is not possible to specify the «Other» link type when working with the «Menu» basic block;
+IN:034391. Editor. The controls in the «Appearance» – «Adaptability» tab are no longer active after changing the «width» parameter in @media styles;
+IN:034384. Editor. An old additional image is displayed when using several «Banner» basic blocks;
+IN:034383. Editor. The «back» button in the «Video» basic block does not work;
+IN:034372. Editor. When updating the page, it throws it out of the editor.
