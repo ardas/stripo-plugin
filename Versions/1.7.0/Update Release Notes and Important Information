@@ -1,12 +1,9 @@
 * IMPORTANT NOTICE * 
-For correct work of the button text size in the mobile version of the email, you need to add in @media styles:
-selector "a" in the following place: 
-.es-button {
-        ...
-    }
-	
+For the correct work of the button's text size on mobile, you need to replace the ".es-button" selector with "a.es-button"  in @media styles as follows:
+a.es-button {
+...
+}	
 http://prntscr.com/majj3a
-
 
 * NEW FEATURES *
 
