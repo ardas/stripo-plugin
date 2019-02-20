@@ -1,0 +1,15 @@
+* IMPORTANT NOTICE * 
+For the correct displaying of the buttons in the MS Outlook, you have to remove the "!important" property in the CSS class: a.es-button { text-decoration: none; }
+
+* NEW FEATURES *
+
+The color of the «Drop here» icon changes accordingly to the background color of the content where the new element has been added;
+The «shadow effect» has been added to the settings panel;
+The control for managing the labels register in the «Timer» basic block has been added;
+The control «Retina display support» in the «Timer» basic block has been added..
+
+* BUG FIXES *
+
+IN:034425. Editor. The alignment of the background image in the «Appearance» tab - does not work for the «General», «Header», «Footer» tabs;
+IN:034466. Editor. An email is cut in MS Outlook when items for the desktop version are «hidden»;
+IN:034461. Editor. All the functionality of the «Menu» basic block is not displayed when editing the block through the code editor.
