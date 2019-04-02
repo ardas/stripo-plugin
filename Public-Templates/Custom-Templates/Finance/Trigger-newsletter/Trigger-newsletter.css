@@ -44,7 +44,10 @@ a[x-apple-data-detectors] {
     mso-hide: all;
 }
 
-/* END OF IMPORTANT */
+
+/*
+END OF IMPORTANT
+*/
 
 html,
 body {
@@ -451,7 +454,7 @@ a.es-button {
     font-style: normal;
     line-height: 120%;
     color: #ffffff;
-    text-decoration: none !important;
+    text-decoration: none;
     width: auto;
     text-align: center;
 }
@@ -475,18 +478,22 @@ a.es-button {
     ol li,
     a {
         font-size: 16px !important;
+        line-height: 150% !important;
     }
     h1 {
         font-size: 30px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h2 {
         font-size: 26px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h3 {
         font-size: 20px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h1 a {
         font-size: 30px !important;
@@ -542,15 +549,15 @@ a.es-button {
     .es-m-txt-l h3 {
         text-align: left !important;
     }
-    .es-m-txt-r a img,
-    .es-m-txt-c a img,
-    .es-m-txt-l a img {
+    .es-m-txt-r img,
+    .es-m-txt-c img,
+    .es-m-txt-l img {
         display: inline !important;
     }
     .es-button-border {
         display: block !important;
     }
-    .es-button {
+    a.es-button {
         font-size: 20px !important;
         display: block !important;
         border-width: 10px 0px 10px 0px !important;
@@ -602,20 +609,20 @@ a.es-button {
         padding-bottom: 20px !important;
     }
     .es-mobile-hidden,
-.es-hidden {
-    display: none !important;
-}
-.es-desk-hidden {
-    display: table-row!important;
-    width: auto!important;
-    overflow: visible!important;
-    float: none!important;
-    max-height: inherit!important;
-    line-height: inherit!important;
-}
-.es-desk-menu-hidden {
-    display: table-cell!important;
-}
+    .es-hidden {
+        display: none !important;
+    }
+    .es-desk-hidden {
+        display: table-row!important;
+        width: auto!important;
+        overflow: visible!important;
+        float: none!important;
+        max-height: inherit!important;
+        line-height: inherit!important;
+    }
+    .es-desk-menu-hidden {
+        display: table-cell!important;
+    }
     table.es-table-not-adapt,
     .esd-block-html table {
         width: auto !important;
