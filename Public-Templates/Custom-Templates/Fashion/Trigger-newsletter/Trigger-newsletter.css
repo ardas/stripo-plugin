@@ -6,7 +6,6 @@ Please do not delete and edit CSS styles below
 
 /* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
 
-
 #outlook a {
     padding: 0;
 }
@@ -47,6 +46,7 @@ a[x-apple-data-detectors] {
     line-height: 0;
     mso-hide: all;
 }
+
 
 /*
 END OF IMPORTANT
@@ -456,7 +456,7 @@ a.es-button {
     font-style: normal;
     line-height: 120%;
     color: #333333;
-    text-decoration: none !important;
+    text-decoration: none;
     width: auto;
     text-align: center;
 }
@@ -485,18 +485,22 @@ If you don't need responsive layout, please delete this section.
     ol li,
     a {
         font-size: 16px !important;
+        line-height: 150% !important;
     }
     h1 {
         font-size: 30px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h2 {
         font-size: 26px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h3 {
         font-size: 20px !important;
         text-align: center;
+        line-height: 120% !important;
     }
     h1 a {
         font-size: 30px !important;
@@ -549,15 +553,15 @@ If you don't need responsive layout, please delete this section.
     .es-m-txt-l h3 {
         text-align: left !important;
     }
-    .es-m-txt-r a img,
-    .es-m-txt-c a img,
-    .es-m-txt-l a img {
+    .es-m-txt-r img,
+    .es-m-txt-c img,
+    .es-m-txt-l img {
         display: inline !important;
     }
     .es-button-border {
         display: inline-block !important;
     }
-    .es-button {
+    a.es-button {
         font-size: 18px !important;
         display: inline-block !important;
         border-width: 10px 20px 10px 20px !important;
@@ -609,20 +613,20 @@ If you don't need responsive layout, please delete this section.
         padding-bottom: 20px !important;
     }
     .es-mobile-hidden,
-.es-hidden {
-    display: none !important;
-}
-.es-desk-hidden {
-    display: table-row!important;
-    width: auto!important;
-    overflow: visible!important;
-    float: none!important;
-    max-height: inherit!important;
-    line-height: inherit!important;
-}
-.es-desk-menu-hidden {
-    display: table-cell!important;
-}
+    .es-hidden {
+        display: none !important;
+    }
+    .es-desk-hidden {
+        display: table-row!important;
+        width: auto!important;
+        overflow: visible!important;
+        float: none!important;
+        max-height: inherit!important;
+        line-height: inherit!important;
+    }
+    .es-desk-menu-hidden {
+        display: table-cell!important;
+    }
     table.es-table-not-adapt,
     .esd-block-html table {
         width: auto !important;
