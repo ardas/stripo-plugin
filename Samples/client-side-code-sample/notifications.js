@@ -1,20 +1,20 @@
 var notifications = {
     autoCloseTimeout: 4000,
     container: '.notification-zone',
-    error: function (text, id, nonclosable) {
-        this.showNotification(this.getErrorNotification.bind(this), text, id, nonclosable);
+    error: function (text, id, params) {
+        this.showNotification(this.getErrorNotification.bind(this), text, id, params);
     },
-    warn: function (text, id, nonclosable) {
-        this.showNotification(this.getWarningNotification.bind(this), text, id, nonclosable);
+    warn: function (text, id, params) {
+        this.showNotification(this.getWarningNotification.bind(this), text, id, params);
     },
-    info: function (text, id, nonclosable) {
-        this.showNotification(this.getInfoNotification.bind(this), text, id, nonclosable);
+    info: function (text, id, params) {
+        this.showNotification(this.getInfoNotification.bind(this), text, id, params);
     },
-    success: function (text, id, nonclosable) {
-        this.showNotification(this.getSuccessNotification.bind(this), text, id, nonclosable);
+    success: function (text, id, params) {
+        this.showNotification(this.getSuccessNotification.bind(this), text, id, params);
     },
-    loader: function (text, id, nonclosable) {
-        this.showNotification(this.getLoaderNotification.bind(this), text, id, nonclosable);
+    loader: function (text, id, params) {
+        this.showNotification(this.getLoaderNotification.bind(this), text, id, params);
     },
     hide: function (id) {
         var toast = $('#' + id, this.container);
@@ -22,12 +22,13 @@ var notifications = {
             toast.remove()
         })
     },
-    showNotification: function (notificationGetter, text, id, nonclosable) {
+    showNotification: function (notificationGetter, text, id, params) {
+        params = Object.assign({autoClose: true, closeable: true}, params || {});
         if (!id || !$('#' + id).length) {
-            var toast = notificationGetter(text, id, nonclosable);
+            var toast = notificationGetter(text, id, !params.closeable);
             $(this.container).append(toast);
             toast.effect('slide', {direction: 'down'}, 300);
-            if (!nonclosable) {
+            if (params.autoClose) {
                 setTimeout(function () {
                     toast.effect('fade', 600, function () {
                         toast.remove()
