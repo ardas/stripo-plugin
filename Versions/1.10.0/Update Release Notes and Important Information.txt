@@ -1,0 +1,22 @@
+* IMPORTANT NOTICE * 
+No need to update the HTML and/or CSS code of email templates to support this verison of the editor.
+
+* NEW FEATURES *
+
+Interactive Buttons
+This function allows you to revive your emails and increase the clickability of the buttons by adding them a hover effect just in 2 clicks in our editor.
+
+* BUG FIXES *
+
+IN:034502. Editor. The section with properties of smart-elements is not placed correctly within the «Modules» section;
+IN:034379. Editor. The control that disables the usage of the background image in the «Footer» does not work in the «Appearance» tab;
+IN:034486. Editor. Text alignment in the drop-down menu of the «Settings Panel» does not work;
+IN:034499. Editor. There are different indents at the top and the bottom of «Blocks» tab on the «Settings Panel»;
+IN:034508. Editor. When adding double quotes to the text block in the code editor, the error of «not matching quotes» is displayed;
+IN:034522. Editor. It is impossible to add spaces in links like «Other»;
+IN:034561. Editor. When selecting structures for an email with a browser scale that differs from 100%, the browser freezes ;
+IN:034529. Editor. It is impossible to edit the «Text» basic block when adding it from an empty container in the Mozilla Firefox browser;
+IN:034500. Editor. Line wrapping in bulleted and numbered lists of the «Text» basic block does not work correctly;
+IN:034560. Editor. The custom font is not displayed in the «Appearance» — «General Settings» tab;
+IN:034591. Editor. Padding cannot be reset in the «Button» basic block;
+IN:034574. Editor. Duplicate data transfer protocol in the link field is not ignored.
