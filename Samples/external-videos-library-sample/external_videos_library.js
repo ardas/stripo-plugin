@@ -61,10 +61,11 @@ window.ExternalVideosLibrary = (function() {
         externalLibrary = $('#externalVideoLibrary');
         externalLibrary.find('.close').click(cancelAndClose);
         externalLibrary.find('.thumbnail').click(function(e) {
-            const urlImage = $(e.currentTarget).find('img').attr('src');
-            const urlVideo = $(e.currentTarget).find('img').attr('urlVideo');
-            const hasCustomButton = $(e.currentTarget).find('img').attr('hasButton');
-            const originalName = $(e.currentTarget).find('img').attr('title');
+            const image = $(e.currentTarget).find('img');
+            const urlImage = image.attr('src');
+            const urlVideo = image.attr('urlVideo');
+            const hasCustomButton = image.attr('hasButton');
+            const originalName = image.attr('title');
             const exampleOfCallbackVideoObject = {
                 originalVideoName: originalName,
                 originalImageName: originalName,
