@@ -62,7 +62,7 @@ window.ExternalImagesLibrary = (function() {
 
 
     return {
-        openLibrary(onImageSelectCallback, onCancelCallback) {
+        openLibrary: function(onImageSelectCallback, onCancelCallback) {
             imageSelectCallback = onImageSelectCallback;
             cancelCallback = onCancelCallback;
             renderLibrary();
