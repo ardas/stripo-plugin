@@ -1,0 +1,7 @@
+* IMPORTANT NOTICE * 
+No need to update the HTML and/or CSS code of email templates to support this verison of the editor.
+
+* BUG FIXES *
+
+IN:034578. Editor. When you open the editor, a pop-up test email is displayed on a white background;
+IN:034643. Editor. Incorrect value is added to the button border when a transparent color is chosen;
