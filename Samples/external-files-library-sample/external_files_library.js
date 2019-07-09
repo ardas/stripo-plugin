@@ -13,25 +13,25 @@ window.ExternalFilesLibrary = (function() {
 
     var initLibrary = function() {
         $('body').append('\
-                <div id="externalFileLibrary" class="modal fade in" role="dialog" tabindex="-1" style="background-color: rgba(0,0,0,.5)">\
-                    <div class="modal-dialog modal-lg" role="document">\
-                    <div class="modal-content">\
-                        <div  class="modal-header">\
+                <div id="externalFileLibrary" style="background-color: rgba(0,0,0,.5); overflow: hidden; position: fixed; top: 0; right: 0;  bottom: 0; left: 0; z-index: 1050; font-family: sans-serif;">\
+                    <div style="margin: 10px;">\
+                    <div style="background-color: #f6f6f6; border-radius: 17px 17px 30px 30px;">\
+                        <div style="padding: 15px; border-bottom: 1px solid #e5e5e5;">\
                             <div>\
-                               <button aria-label="Close" class="close" type="button">\
+                               <button class="close" type="button" style="cursor: pointer; background: transparent; border: 0; float: right; font-size: 21px; font-weight: bold; opacity: .2;">\
                                     <span aria-hidden="true">×</span>\
                                 </button>\
-                                <h4 class="modal-title">External File Library</h4>\
+                                <h4 style="margin: 0; font-size: 18px; color: rgb(85, 85, 85);">External File Library</h4>\
                             </div>\
                         </div>\
-                        <div class="modal-body">\
-                            <div style="display: inline-block; min-width: 154px; cursor: pointer; text-align: center" class="thumbnail">\
+                        <div style="padding: 15px;">\
+                            <div class="thumbnail" style="display: inline-block; width: 154px; height: 120px; cursor: pointer; padding: 4px; background-color: #ffffff; border: 1px solid #b80000; border-radius: 10px;">\
                                 <span urlFile="https://www.youtube.com/1">File link 1</span>\
                             </div>\
-                            <div style="display: inline-block; min-width: 154px; cursor: pointer; text-align: center" class="thumbnail">\
+                            <div class="thumbnail" style="display: inline-block; width: 154px; height: 120px; cursor: pointer; padding: 4px; background-color: #ffffff; border: 1px solid #b80000; border-radius: 10px;">\
                                 <span urlFile="ftps://lkjhgfd">File link 2</span>\
                             </div>\
-                            <div style="display: inline-block; min-width: 154px; cursor: pointer; text-align: center" class="thumbnail">\
+                            <div class="thumbnail" style="display: inline-block; width: 154px; height: 120px; cursor: pointer; padding: 4px; background-color: #ffffff; border: 1px solid #b80000; border-radius: 10px;">\
                                 <span urlFile="ftp://tyhujiop">File link 3</span>\
                             </div>\
                         </div>\
