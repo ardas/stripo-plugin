@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stripo Plugin Example</title>
+    <style>
+        #externalSystemContainer {
+            background-color: darkgrey;
+            padding: 5px 0 5px 20px;
+        }
+        #stripoSettingsContainer {
+            width: 400px;
+            float: left;
+        }
+        #stripoPreviewContainer {
+            width: calc(100% - 400px);
+            float: left;
+        }
+        .control-button {
+            border-radius: 17px;
+            padding: 5px 10px;
+            border-color: grey;
+        }
+    </style>
+</head>
+<body>
+<div id="externalSystemContainer">
+    <!--This is external system container where you can place plugin buttons -->
+    <button id="codeEditor" class="control-button">Code editor</button>
+</div>
+<div>
+    <!--Plugin containers -->
+    <div id="stripoSettingsContainer">Loading...</div>
+    <div id="stripoPreviewContainer"></div>
+</div>
+
+<script type="application/javascript" src="external_smart_elements_library.js"></script>
+<script>
+    // Utility methods
+    function request(method, url, data, callback) {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function () {
+            if (req.readyState === 4 && req.status === 200) {
+                callback(req.responseText);
+            } else if (req.readyState === 4 && req.status !== 200) {
+                console.error('Can not complete request. Please check you entered a valid PLUGIN_ID and SECRET_KEY values');
+            }
+        };
+        req.open(method, url, true);
+        if (method !== 'GET') {
+            req.setRequestHeader('content-type', 'application/json');
+        }
+        req.send(data);
+    }
+
+    function loadDemoTemplate(callback) {
+        request('GET', 'https://raw.githubusercontent.com/ardas/stripo-plugin/master/Public-Templates/Basic-Templates/Trigger%20newsletter%20mockup/Trigger%20newsletter%20mockup.html', null, function(html) {
+            request('GET', 'https://raw.githubusercontent.com/ardas/stripo-plugin/master/Public-Templates/Basic-Templates/Trigger%20newsletter%20mockup/Trigger%20newsletter%20mockup.css', null, function(css) {
+                callback({html: html, css: css});
+            });
+        });
+    }
+</script>
+
+<script>
+    // Call this function to start plugin.
+    // For security reasons it is STRONGLY recommended NOT to store your PLUGIN_ID and SECRET_KEY on client side.
+    // Please use backend middleware to authenticate plugin.
+    // See documentation: https://stripo.email/plugin-api/
+    function initPlugin(template) {
+        const apiRequestData = {
+            emailId: 123
+        };
+        const script = document.createElement('script');
+        script.id = 'stripoScript';
+        script.type = 'text/javascript';
+        script.src = 'https://plugins.stripo.email/static/latest/stripo.js';
+        script.onload = function () {
+            window.Stripo.init({
+                settingsId: 'stripoSettingsContainer',
+                previewId: 'stripoPreviewContainer',
+                codeEditorButtonId: 'codeEditor',
+                locale: 'en',
+                html: template.html,
+                css: template.css,
+                externalSmartElementsLibrary: window.ExternalSmartElementsLibrary,
+                ignoreClickOutsideSelectors: '#externalSmartElementsLibrary',
+                apiRequestData: apiRequestData,
+                getAuthToken: function (callback) {
+                    request('POST', 'https://plugins.stripo.email/api/v1/auth',
+                        JSON.stringify({
+                            pluginId: 'YOUR_PLUGIN_ID',
+                            secretKey: 'YOUR_SECRET_KEY'
+                        }),
+                        function(data) {
+                            callback(JSON.parse(data).token);
+                        });
+                }
+            });
+        };
+        document.body.appendChild(script);
+    }
+
+    loadDemoTemplate(initPlugin);
+</script>
+</body>
+</html>
