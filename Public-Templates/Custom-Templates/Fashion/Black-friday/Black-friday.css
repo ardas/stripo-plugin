@@ -54,7 +54,7 @@ s {
 html,
 body {
     width: 100%;
-    font-family: tahoma, verdana, segoe, sans-serif;
+    font-family: verdana, geneva, sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -106,7 +106,7 @@ h5 {
     Margin: 0;
     line-height: 120%;
     mso-line-height-rule: exactly;
-    font-family: tahoma, verdana, segoe, sans-serif;
+    font-family: georgia, times, 'times new roman', serif;
 }
 
 p,
@@ -298,7 +298,7 @@ a {
 END CONFIG STYLES
 */
 a {
-    font-family: tahoma, verdana, segoe, sans-serif;
+    font-family: verdana, geneva, sans-serif;
     font-size: 14px;
     text-decoration: underline;
 }
@@ -307,7 +307,7 @@ h1 {
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
-    color: #ffffff;
+    color: #333333;
 }
 
 h1 a {
@@ -318,7 +318,7 @@ h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: normal;
-    color: #ffffff;
+    color: #333333;
 }
 
 h2 a {
@@ -326,21 +326,21 @@ h2 a {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: normal;
-    color: #ffffff;
+    color: #333333;
 }
 
 h3 a {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 p,
 ul li,
 ol li {
     font-size: 14px;
-    font-family: tahoma, verdana, segoe, sans-serif;
+    font-family: verdana, geneva, sans-serif;
     line-height: 150%;
 }
 
@@ -363,21 +363,21 @@ ol li {
 }
 
 .es-wrapper-color {
-    background-color: #efefef;
+    background-color: #f6f6f6;
 }
 
 .es-content-body {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
 }
 
 .es-content-body p,
 .es-content-body ul li,
 .es-content-body ol li {
-    color: #ffffff;
+    color: #333333;
 }
 
 .es-content-body a {
-    color: #f09870;
+    color: #333333;
 }
 
 .es-header {
@@ -388,18 +388,18 @@ ol li {
 }
 
 .es-header-body {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 .es-header-body p,
 .es-header-body ul li,
 .es-header-body ol li {
-    color: #999999;
+    color: #cccccc;
     font-size: 14px;
 }
 
 .es-header-body a {
-    color: #999999;
+    color: #cccccc;
     font-size: 14px;
 }
 
@@ -411,19 +411,19 @@ ol li {
 }
 
 .es-footer-body {
-    background-color: #f7f7f7;
+    background-color: transparent;
 }
 
 .es-footer-body p,
 .es-footer-body ul li,
 .es-footer-body ol li {
-    color: #bbbbbb;
-    font-size: 13px;
+    color: #666666;
+    font-size: 11px;
 }
 
 .es-footer-body a {
-    color: #f09870;
-    font-size: 13px;
+    color: #333333;
+    font-size: 11px;
 }
 
 .es-infoblock,
@@ -432,24 +432,24 @@ ol li {
 .es-infoblock ol li {
     line-height: 120%;
     font-size: 12px;
-    color: #bbbbbb;
+    color: #cccccc;
 }
 
 .es-infoblock a {
     font-size: 12px;
-    color: #bbbbbb;
+    color: #cccccc;
 }
 
 a.es-button {
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #f6f6f6;
     border-width: 10px 20px 10px 20px;
     display: inline-block;
-    background: #ffffff;
+    background: #f6f6f6;
     border-radius: 0px;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: 'arial', 'helvetica neue', 'helvetica', 'sans-serif';
+    font-weight: normal;
     font-style: normal;
     line-height: 120%;
     color: #333333;
@@ -460,9 +460,9 @@ a.es-button {
 
 .es-button-border {
     border-style: solid solid solid solid;
-    border-color: #333333 #333333 #333333 #333333;
+    border-color: #f6f6f6 #f6f6f6 #333333 #f6f6f6;
     background: #2cb543;
-    border-width: 0px 0px 0px 0px;
+    border-width: 2px 2px 2px 2px;
     display: inline-block;
     border-radius: 0px;
     width: auto;
@@ -575,9 +575,9 @@ If you don't need responsive layout, please delete this section.
     }
 
     a.es-button {
-        font-size: 20px !important;
+        font-size: 18px !important;
         display: block !important;
-        border-width: 10px 0px 10px 0px !important;
+        border-width: 10px 20px 10px 20px !important;
     }
 
     .es-btn-fw {
