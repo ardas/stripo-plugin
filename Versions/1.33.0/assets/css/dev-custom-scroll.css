@@ -1,0 +1,23 @@
+
+* {
+/* FireFox */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
