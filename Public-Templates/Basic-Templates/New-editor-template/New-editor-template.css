@@ -496,6 +496,15 @@ a.es-button {
     .es-m-txt-r h6 {
         text-align: left !important;
     }
+    .es-m-txt-j,
+    .es-m-txt-j h1,
+    .es-m-txt-j h2,
+    .es-m-txt-j h3,
+    .es-m-txt-j h4,
+    .es-m-txt-j h5,
+    .es-m-txt-j h6 {
+        text-align: justify !important;
+    }
     .es-m-txt-r img,
     .es-m-txt-c img,
     .es-m-txt-l img,
