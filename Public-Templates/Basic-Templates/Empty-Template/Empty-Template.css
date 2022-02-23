@@ -4,19 +4,6 @@
     padding: 0;
 }
 
-.ExternalClass {
-    width: 100%;
-}
-
-.ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
-    line-height: 100%;
-}
-
 .es-button {
     mso-style-priority: 100 !important;
     text-decoration: none !important;
@@ -41,14 +28,14 @@ a[x-apple-data-detectors] {
     mso-hide: all;
 }
 
+[data-ogsb] .es-button {
+    border-width: 0 !important;
+    padding: 10px 20px 10px 20px !important;
+}
+
 /*
 END OF IMPORTANT
 */
-s {
-    text-decoration: line-through;
-}
-
-html,
 body {
     width: 100%;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
@@ -64,7 +51,6 @@ table {
 }
 
 table td,
-html,
 body,
 .es-wrapper {
     padding: 0;
@@ -84,10 +70,6 @@ img {
     outline: none;
     text-decoration: none;
     -ms-interpolation-mode: bicubic;
-}
-
-table tr {
-    border-collapse: collapse;
 }
 
 p,
@@ -289,52 +271,19 @@ a {
 
 .es-menu td a img {
     display: inline-block !important;
+    vertical-align: middle;
 }
 
-/* END CONFIG STYLES */
-a {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    font-size: 14px;
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
-
-h1 a {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
-
-h2 a {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
-
-h3 a {
-    font-size: 20px;
+/*
+END CONFIG STYLES
+*/
+s {
+    text-decoration: line-through;
 }
 
 p,
 ul li,
 ol li {
-    font-size: 14px;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
     line-height: 150%;
 }
@@ -342,11 +291,17 @@ ol li {
 ul li,
 ol li {
     Margin-bottom: 15px;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .es-menu td a {
     text-decoration: none;
     display: block;
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
 }
 
 .es-wrapper {
@@ -359,20 +314,6 @@ ol li {
 
 .es-wrapper-color {
     background-color: #f6f6f6;
-}
-
-.es-content-body {
-    background-color: #ffffff;
-}
-
-.es-content-body p,
-.es-content-body ul li,
-.es-content-body ol li {
-    color: #333333;
-}
-
-.es-content-body a {
-    color: #2cb543;
 }
 
 .es-header {
@@ -394,7 +335,23 @@ ol li {
 }
 
 .es-header-body a {
-    color: #1376c8;
+    color: #2cb543;
+    font-size: 14px;
+}
+
+.es-content-body {
+    background-color: #ffffff;
+}
+
+.es-content-body p,
+.es-content-body ul li,
+.es-content-body ol li {
+    color: #333333;
+    font-size: 14px;
+}
+
+.es-content-body a {
+    color: #2cb543;
     font-size: 14px;
 }
 
@@ -435,7 +392,47 @@ ol li {
     color: #cccccc;
 }
 
-a.es-button {
+h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+.es-header-body h1 a,
+.es-content-body h1 a,
+.es-footer-body h1 a {
+    font-size: 30px;
+}
+
+.es-header-body h2 a,
+.es-content-body h2 a,
+.es-footer-body h2 a {
+    font-size: 24px;
+}
+
+.es-header-body h3 a,
+.es-content-body h3 a,
+.es-footer-body h3 a {
+    font-size: 20px;
+}
+
+a.es-button,
+button.es-button {
     border-style: solid;
     border-color: #31cb4b;
     border-width: 10px 20px 10px 20px;
@@ -470,56 +467,77 @@ a.es-button {
     ul li,
     ol li,
     a {
-        font-size: 16px !important;
         line-height: 150% !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h1 a,
+    h2 a,
+    h3 a {
+        line-height: 120%;
     }
 
     h1 {
         font-size: 30px !important;
-        text-align: center;
-        line-height: 120% !important;
+        text-align: left;
     }
 
     h2 {
-        font-size: 26px !important;
-        text-align: center;
-        line-height: 120% !important;
+        font-size: 24px !important;
+        text-align: left;
     }
 
     h3 {
         font-size: 20px !important;
-        text-align: center;
-        line-height: 120% !important;
+        text-align: left;
     }
 
-    h1 a {
+    .es-header-body h1 a,
+    .es-content-body h1 a,
+    .es-footer-body h1 a {
         font-size: 30px !important;
+        text-align: left;
     }
 
-    h2 a {
-        font-size: 26px !important;
+    .es-header-body h2 a,
+    .es-content-body h2 a,
+    .es-footer-body h2 a {
+        font-size: 24px !important;
+        text-align: left;
     }
 
-    h3 a {
+    .es-header-body h3 a,
+    .es-content-body h3 a,
+    .es-footer-body h3 a {
         font-size: 20px !important;
+        text-align: left;
     }
 
     .es-menu td a {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     .es-header-body p,
     .es-header-body ul li,
     .es-header-body ol li,
     .es-header-body a {
-        font-size: 16px !important;
+        font-size: 14px !important;
+    }
+
+    .es-content-body p,
+    .es-content-body ul li,
+    .es-content-body ol li,
+    .es-content-body a {
+        font-size: 14px !important;
     }
 
     .es-footer-body p,
     .es-footer-body ul li,
     .es-footer-body ol li,
     .es-footer-body a {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     .es-infoblock p,
@@ -561,23 +579,16 @@ a.es-button {
     }
 
     .es-button-border {
-        display: block !important;
+        display: inline-block !important;
     }
 
-    a.es-button {
-        font-size: 20px !important;
-        display: block !important;
-        border-width: 10px 0px 10px 0px !important;
-    }
-
-    .es-btn-fw {
-        border-width: 10px 0px !important;
-        text-align: center !important;
+    a.es-button,
+    button.es-button {
+        font-size: 18px !important;
+        display: inline-block !important;
     }
 
     .es-adaptive table,
-    .es-btn-fw,
-    .es-btn-fw-brdr,
     .es-left,
     .es-right {
         width: 100% !important;
@@ -635,7 +646,6 @@ a.es-button {
     tr.es-desk-hidden,
     td.es-desk-hidden,
     table.es-desk-hidden {
-        display: table-row !important;
         width: auto !important;
         overflow: visible !important;
         float: none !important;
@@ -643,8 +653,20 @@ a.es-button {
         line-height: inherit !important;
     }
 
-    .es-desk-menu-hidden {
+    tr.es-desk-hidden {
+        display: table-row !important;
+    }
+
+    table.es-desk-hidden {
+        display: table !important;
+    }
+
+    td.es-desk-menu-hidden {
         display: table-cell !important;
+    }
+
+    .es-menu td {
+        width: 1% !important;
     }
 
     table.es-table-not-adapt,
@@ -662,3 +684,7 @@ a.es-button {
 }
 
 /* END RESPONSIVE STYLES */
+html,
+body {
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+}
