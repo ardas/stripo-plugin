@@ -1,20 +1,10 @@
 /* CONFIG STYLES Please do not delete and edit CSS styles below */
+
+
 /* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
+
 #outlook a {
     padding: 0;
-}
-
-.ExternalClass {
-    width: 100%;
-}
-
-.ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
-    line-height: 100%;
 }
 
 .es-button {
@@ -41,14 +31,16 @@ a[x-apple-data-detectors] {
     mso-hide: all;
 }
 
+[data-ogsb] .es-button {
+    border-width: 0 !important;
+    padding: 5px 30px 5px 30px !important;
+}
+
+
 /*
 END OF IMPORTANT
 */
-s {
-    text-decoration: line-through;
-}
 
-html,
 body {
     width: 100%;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
@@ -64,7 +56,6 @@ table {
 }
 
 table td,
-html,
 body,
 .es-wrapper {
     padding: 0;
@@ -84,10 +75,6 @@ img {
     outline: none;
     text-decoration: none;
     -ms-interpolation-mode: bicubic;
-}
-
-table tr {
-    border-collapse: collapse;
 }
 
 p,
@@ -289,52 +276,21 @@ a {
 
 .es-menu td a img {
     display: inline-block !important;
+    vertical-align: middle;
 }
 
-/* END CONFIG STYLES */
-a {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    font-size: 14px;
-    text-decoration: underline;
-}
 
-h1 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
+/*
+END CONFIG STYLES
+*/
 
-h1 a {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
-
-h2 a {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: normal;
-    color: #333333;
-}
-
-h3 a {
-    font-size: 20px;
+s {
+    text-decoration: line-through;
 }
 
 p,
 ul li,
 ol li {
-    font-size: 14px;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
     line-height: 150%;
 }
@@ -342,6 +298,11 @@ ol li {
 ul li,
 ol li {
     Margin-bottom: 15px;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .es-menu td a {
@@ -359,20 +320,6 @@ ol li {
 
 .es-wrapper-color {
     background-color: #f6f6f6;
-}
-
-.es-content-body {
-    background-color: #ffffff;
-}
-
-.es-content-body p,
-.es-content-body ul li,
-.es-content-body ol li {
-    color: #333333;
-}
-
-.es-content-body a {
-    color: #333333;
 }
 
 .es-header {
@@ -394,6 +341,22 @@ ol li {
 }
 
 .es-header-body a {
+    color: #333333;
+    font-size: 14px;
+}
+
+.es-content-body {
+    background-color: #ffffff;
+}
+
+.es-content-body p,
+.es-content-body ul li,
+.es-content-body ol li {
+    color: #333333;
+    font-size: 14px;
+}
+
+.es-content-body a {
     color: #333333;
     font-size: 14px;
 }
@@ -435,7 +398,47 @@ ol li {
     color: #cccccc;
 }
 
-a.es-button {
+h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+.es-header-body h1 a,
+.es-content-body h1 a,
+.es-footer-body h1 a {
+    font-size: 30px;
+}
+
+.es-header-body h2 a,
+.es-content-body h2 a,
+.es-footer-body h2 a {
+    font-size: 24px;
+}
+
+.es-header-body h3 a,
+.es-content-body h3 a,
+.es-footer-body h3 a {
+    font-size: 20px;
+}
+
+a.es-button,
+button.es-button {
     border-style: solid;
     border-color: #f0f0f0;
     border-width: 5px 30px 5px 30px;
@@ -463,126 +466,118 @@ a.es-button {
     width: auto;
 }
 
-/* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
-@media only screen and (max-width: 600px) {
 
+/* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
+
+@media only screen and (max-width: 600px) {
     p,
     ul li,
     ol li,
     a {
-        font-size: 16px !important;
         line-height: 150% !important;
     }
-
+    h1,
+    h2,
+    h3,
+    h1 a,
+    h2 a,
+    h3 a {
+        line-height: 120% !important;
+    }
     h1 {
         font-size: 30px !important;
         text-align: center;
-        line-height: 120% !important;
     }
-
     h2 {
         font-size: 26px !important;
         text-align: center;
-        line-height: 120% !important;
     }
-
     h3 {
         font-size: 20px !important;
         text-align: center;
-        line-height: 120% !important;
     }
-
-    h1 a {
+    .es-header-body h1 a,
+    .es-content-body h1 a,
+    .es-footer-body h1 a {
         font-size: 30px !important;
     }
-
-    h2 a {
+    .es-header-body h2 a,
+    .es-content-body h2 a,
+    .es-footer-body h2 a {
         font-size: 26px !important;
     }
-
-    h3 a {
+    .es-header-body h3 a,
+    .es-content-body h3 a,
+    .es-footer-body h3 a {
         font-size: 20px !important;
     }
-
     .es-menu td a {
         font-size: 13px !important;
     }
-
     .es-header-body p,
     .es-header-body ul li,
     .es-header-body ol li,
     .es-header-body a {
         font-size: 16px !important;
     }
-
+    .es-content-body p,
+    .es-content-body ul li,
+    .es-content-body ol li,
+    .es-content-body a {
+        font-size: 16px !important;
+    }
     .es-footer-body p,
     .es-footer-body ul li,
     .es-footer-body ol li,
     .es-footer-body a {
         font-size: 16px !important;
     }
-
     .es-infoblock p,
     .es-infoblock ul li,
     .es-infoblock ol li,
     .es-infoblock a {
         font-size: 12px !important;
     }
-
     *[class="gmail-fix"] {
         display: none !important;
     }
-
     .es-m-txt-c,
     .es-m-txt-c h1,
     .es-m-txt-c h2,
     .es-m-txt-c h3 {
         text-align: center !important;
     }
-
     .es-m-txt-r,
     .es-m-txt-r h1,
     .es-m-txt-r h2,
     .es-m-txt-r h3 {
         text-align: right !important;
     }
-
     .es-m-txt-l,
     .es-m-txt-l h1,
     .es-m-txt-l h2,
     .es-m-txt-l h3 {
         text-align: left !important;
     }
-
     .es-m-txt-r img,
     .es-m-txt-c img,
     .es-m-txt-l img {
         display: inline !important;
     }
-
     .es-button-border {
         display: block !important;
     }
-
-    a.es-button {
+    a.es-button,
+    button.es-button {
         font-size: 16px !important;
         display: block !important;
         border-width: 10px 0px 10px 0px !important;
     }
-
-    .es-btn-fw {
-        border-width: 10px 0px !important;
-        text-align: center !important;
-    }
-
     .es-adaptive table,
-    .es-btn-fw,
-    .es-btn-fw-brdr,
     .es-left,
     .es-right {
         width: 100% !important;
     }
-
     .es-content table,
     .es-header table,
     .es-footer table,
@@ -592,73 +587,68 @@ a.es-button {
         width: 100% !important;
         max-width: 600px !important;
     }
-
     .es-adapt-td {
         display: block !important;
         width: 100% !important;
     }
-
     .adapt-img {
         width: 100% !important;
         height: auto !important;
     }
-
     .es-m-p0 {
         padding: 0px !important;
     }
-
     .es-m-p0r {
         padding-right: 0px !important;
     }
-
     .es-m-p0l {
         padding-left: 0px !important;
     }
-
     .es-m-p0t {
         padding-top: 0px !important;
     }
-
     .es-m-p0b {
         padding-bottom: 0 !important;
     }
-
     .es-m-p20b {
         padding-bottom: 20px !important;
     }
-
     .es-mobile-hidden,
     .es-hidden {
         display: none !important;
     }
-
     tr.es-desk-hidden,
     td.es-desk-hidden,
     table.es-desk-hidden {
+        width: auto!important;
+        overflow: visible!important;
+        float: none!important;
+        max-height: inherit!important;
+        line-height: inherit!important;
+    }
+    tr.es-desk-hidden {
         display: table-row !important;
-        width: auto !important;
-        overflow: visible !important;
-        float: none !important;
-        max-height: inherit !important;
-        line-height: inherit !important;
     }
-
-    .es-desk-menu-hidden {
-        display: table-cell !important;
+    table.es-desk-hidden {
+        display: table !important;
     }
-
+    td.es-desk-menu-hidden {
+        display: table-cell!important;
+    }
+    .es-menu td {
+        width: 1% !important;
+    }
     table.es-table-not-adapt,
     .esd-block-html table {
         width: auto !important;
     }
-
     table.es-social {
         display: inline-block !important;
     }
-
     table.es-social td {
         display: inline-block !important;
     }
 }
+
 
 /* END RESPONSIVE STYLES */
