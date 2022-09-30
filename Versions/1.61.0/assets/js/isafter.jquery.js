@@ -1,0 +1,1 @@
+!function(r){r.fn.isAfter=function(n){var i=r(this),a=i.parents(),e=n.parents(),t=i;for(var f in a){var o=n;if(a.hasOwnProperty(f)){var s=r(a[f]);for(var v in e)if(e.hasOwnProperty(v)){var u=r(e[v]);if(s[0]===u[0])return t.index()>o.index();o=u}t=s}}return!1}}(jQuery);
