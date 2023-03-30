@@ -1,6 +1,6 @@
 {
    "esputnik/amp-validator-service": "20230322-1044_62c0bba",
-   "esputnik/esputnik/stripo-config-server": "02032023",
+   "esputnik/stripo-config-server": "02032023",
    "esputnik/emple-loadbalancer": "20230307-1827",
    "esputnik/patches-service": "20230322-1043_62c0bba",
    "esputnik/screenshot-service": "20230327-2352_abf2fc3",
@@ -17,5 +17,5 @@
    "esputnik/stripo-security-service": "20230328-1952_cbaec8d",
    "esputnik/stripo-timer-api": "20230329-1026_580e43d",
    "esputnik/emple-ui": "20230327-1155_8e886b9",
-   "esputnik/countdowntimer": "20230306-1425_d63d4419175020dd51f677e560f3114ed8dd24b4"
+   "esputnik/countdowntimer": "20230327-1407_5e4a5673bd3f33ef289ec84dcc8da9ddc14241f8"
 }
