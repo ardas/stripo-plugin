@@ -57,7 +57,7 @@
                     <tbody>
                     <tr>
                         <td class="esd-stripe" align="center" bgcolor="transparent">
-                            <table class="es-content-body" width="1200" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+                            <table class="es-content-body" width="900" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
                                 <tbody>
                                 <tr>
                                     <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
@@ -79,27 +79,6 @@
                                                                   <li><p>Followed by a list.</p></li>
                                                                   <li><p>Containing two items</p></li>
                                                               </ol>
-                                                              <p>Followed by a table</p>
-                                                              <table cellspacing="0" cellpadding="0" style="width:100%" class="es-table">
-                                                                  <tbody>
-                                                                  <tr>
-                                                                      <td><strong>Item</strong></td>
-                                                                      <td><strong>Quantity</strong></td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <td>One</td>
-                                                                      <td>30</td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <td>Two</td>
-                                                                      <td>12</td>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <td><strong style="color:#e06666">Total</strong></td>
-                                                                      <td style="color:#e06666"><strong>42</strong></td>
-                                                                  </tr>
-                                                                  </tbody>
-                                                              </table>
                                                               <p>This is a concluding paragraph.</p>
                                                           </td>
                                                         </tr>
