@@ -1,7 +1,7 @@
 {
    "esputnik/amp-validator-service": "20230711-1421_cd72cee",
    "esputnik/stripo-config-server": "20230511-1705",
-   "esputnik/emple-loadbalancer": "latest",
+   "esputnik/emple-loadbalancer": "20230511-1429",
    "esputnik/patches-service": "20230711-1418_cd72cee",
    "esputnik/screenshot-service": "20230713-1321_20f737c",
    "esputnik/stripe-html-cleaner-service": "20230802-1315_382b615",
