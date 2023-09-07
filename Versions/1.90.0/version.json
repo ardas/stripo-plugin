@@ -1,0 +1,22 @@
+{
+   "esputnik/amp-validator-service": "20230711-1421_cd72cee",
+   "esputnik/stripo-config-server": "20230511-1705",
+   "esputnik/emple-loadbalancer": "latest",
+   "esputnik/patches-service": "20230711-1418_cd72cee",
+   "esputnik/screenshot-service": "20230905-0712_e12d689",
+   "esputnik/stripe-html-cleaner-service": "20230901-1520_504eb44",
+   "esputnik/stripe-html-gen-service": "20230901-1139_c71f122",
+   "esputnik/stripo-plugin-api-gateway": "20230907-0811_54cc313",
+   "esputnik/stripo-plugin-custom-blocks-service": "20230901-1132_c71f122",
+   "esputnik/stripo-plugin-details-service": "20230821-1520_a9650e7",
+   "esputnik/stripo-plugin-documents-service": "20230901-1520_504eb44",
+   "esputnik/stripo-plugin-drafts-service": "20230901-1126_c71f122",
+   "esputnik/stripo-plugin-image-bank-service": "20230901-1520_504eb44",
+   "esputnik/stripo-plugin-proxy-service": "20230901-1130_c71f122",
+   "esputnik/stripo-plugin-statistics-service": "20230901-1129_c71f122",
+   "esputnik/stripo-security-service": "20230821-1952_432dfc4",
+   "esputnik/stripo-timer-api": "20230831-0130_56dafce",
+   "esputnik/": "",
+   "esputnik/ai-service": "20230901-1146_c71f122",
+   "esputnik/countdowntimer": "20230814-r1411_c1d4851_master"
+}
