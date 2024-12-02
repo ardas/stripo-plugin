@@ -12,7 +12,7 @@
    "stripo/stripo-plugin-drafts-service": "20241125-1750_ce5b8db",
    "stripo/stripo-plugin-image-bank-service": "20241125-1754_ce5b8db",
    "stripo/stripo-plugin-proxy-service": "20241125-1754_ce5b8db",
-   "stripo/stripo-plugin-statistics-service": "20241125-1752_ce5b8db",
+   "stripo/stripo-plugin-statistics-service": "20241129-1950_65d71f6",
    "stripo/stripo-security-service": "20241029-1729_2b84cc2",
    "stripo/stripo-timer-api": "20241125-2007_1adc769",
    "stripo/emple-ui": "20241121-1009_febcf4b",
