@@ -5,7 +5,7 @@
    "stripo/screenshot-service": "20241127-1713_ea406c8",
    "stripo/stripe-html-cleaner-service": "20241209-2233_122535c",
    "stripo/stripe-html-gen-service": "20241209-2236_122535c",
-   "214147298139.dkr.ecr.eu-west-1.amazonaws.com/stripo/stripo-plugin-api-gateway": "20241202-1555_a60cd81",
+   "stripo/stripo-plugin-api-gateway": "20241202-1555_a60cd81",
    "stripo/stripo-plugin-custom-blocks-service": "20241209-2233_122535c",
    "stripo/stripo-plugin-details-service": "20241204-1153_0173c7b",
    "stripo/stripo-plugin-documents-service": "20241209-2224_122535c",
