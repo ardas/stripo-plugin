@@ -16,5 +16,6 @@
    "stripo/stripo-security-service": "20241220-1520_9eb52df",
    "stripo/stripo-timer-api": "20241227-1054_1381365",
    "stripo/emple-ui": "20241228-1149_8ae549c",
-   "stripo/ai-service": "20241227-1056_1381365"
+   "stripo/ai-service": "20241227-1056_1381365",
+   "stripo/countdowntimer": "20241121-r1404_aa9f561_master"
 }
