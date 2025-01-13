@@ -5,7 +5,7 @@
    "stripo/screenshot-service": "20241220-1511_9eb52df",
    "stripo/stripe-html-cleaner-service": "20241227-1049_1381365",
    "stripo/stripe-html-gen-service": "20241227-1052_1381365",
-   "214147298139.dkr.ecr.eu-west-1.amazonaws.com/stripo/stripo-plugin-api-gateway": "20241202-1555_a60cd81",
+   "stripo/stripo-plugin-api-gateway": "20241202-1555_a60cd81",
    "stripo/stripo-plugin-custom-blocks-service": "20241227-1049_1381365",
    "stripo/stripo-plugin-details-service": "20241220-1830_ed6885b",
    "stripo/stripo-plugin-documents-service": "20241227-1039_1381365",
@@ -17,5 +17,5 @@
    "stripo/stripo-timer-api": "20241227-1054_1381365",
    "stripo/emple-ui": "20241228-1149_8ae549c",
    "stripo/ai-service": "20241227-1056_1381365",
-   "stripo/countdowntimer": "20241121-r1404_aa9f561_master esputnik/countdowntimer"
+   "stripo/countdowntimer": "20241121-r1404_aa9f561_master"
 }
