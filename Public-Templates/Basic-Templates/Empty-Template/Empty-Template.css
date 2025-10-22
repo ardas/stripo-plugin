@@ -1,15 +1,40 @@
 /* CONFIG STYLES Please do not delete and edit CSS styles below */
 /* IMPORTANT THIS STYLES MUST BE ON FINAL EMAIL */
+.rollover:hover .rollover-first {
+    max-height: 0px !important;
+    display: none !important;
+}
+
+.rollover:hover .rollover-second {
+    max-height: none !important;
+    display: block !important;
+}
+
+.rollover span {
+    font-size: 0px;
+}
+
+u + .body img ~ div div {
+    display: none;
+}
+
 #outlook a {
     padding: 0;
 }
 
-.es-button {
+span.MsoHyperlink,
+span.MsoHyperlinkFollowed {
+    color: inherit;
+    mso-style-priority: 99;
+}
+
+a.es-button {
     mso-style-priority: 100 !important;
     text-decoration: none !important;
 }
 
-a[x-apple-data-detectors] {
+a[x-apple-data-detectors],
+#MessageViewBody a {
     color: inherit !important;
     text-decoration: none !important;
     font-size: inherit !important;
@@ -29,11 +54,11 @@ a[x-apple-data-detectors] {
 }
 
 /*
-END OF IMPORTANT
+  END OF IMPORTANT
 */
 body {
     width: 100%;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    height: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -55,16 +80,16 @@ body,
 .es-content,
 .es-header,
 .es-footer {
-    table-layout: fixed !important;
     width: 100%;
+    table-layout: fixed !important;
 }
 
 img {
     display: block;
+    font-size: 14px;
     border: 0;
     outline: none;
     text-decoration: none;
-    -ms-interpolation-mode: bicubic;
 }
 
 p,
@@ -76,19 +101,16 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     Margin: 0;
-    line-height: 120%;
-    mso-line-height-rule: exactly;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    mso-line-height-rule: exactly;
+    letter-spacing: 0;
 }
 
 p,
-ul li,
-ol li,
 a {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
     mso-line-height-rule: exactly;
 }
 
@@ -162,22 +184,6 @@ a {
 
 .es-p20 {
     padding: 20px;
-}
-
-.es-p20t {
-    padding-top: 20px;
-}
-
-.es-p20b {
-    padding-bottom: 20px;
-}
-
-.es-p20l {
-    padding-left: 20px;
-}
-
-.es-p20r {
-    padding-right: 20px;
 }
 
 .es-p25 {
@@ -264,29 +270,63 @@ a {
     border: 0;
 }
 
+.es-menu div {
+    vertical-align: middle;
+    display: block;
+}
+
 .es-menu td a img {
-    display: inline-block !important;
+    display: inline !important;
     vertical-align: middle;
 }
 
+sub,
+sup {
+    display: inline-block;
+    font-size: 83% !important;
+    line-height: 1 !important;
+}
+
+sub {
+    vertical-align: bottom;
+    mso-text-raise: -30%;
+}
+
+sup {
+    mso-text-raise: 30%;
+    vertical-align: top;
+}
+
 /*
-END CONFIG STYLES
-*/
+  END CONFIG STYLES
+  */
 s {
     text-decoration: line-through;
 }
 
-p,
-ul li,
-ol li {
+ul,
+ol {
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
-    line-height: 150%;
+    padding: 0px 0px 0px 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-ul li,
+ul li {
+    color: #333333;
+}
+
 ol li {
-    Margin-bottom: 15px;
-    margin-left: 0;
+    color: #333333;
+}
+
+li {
+    margin: 0px 0px 15px;
+    font-size: 14px;
+}
+
+li p {
+    mso-margin-bottom-alt: 15px;
 }
 
 a {
@@ -294,16 +334,14 @@ a {
 }
 
 .es-menu td a {
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
     text-decoration: none;
     display: block;
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
 }
 
 .es-wrapper {
     width: 100%;
     height: 100%;
-    background-repeat: repeat;
-    background-position: center top;
 }
 
 .es-wrapper-color,
@@ -311,25 +349,30 @@ a {
     background-color: #f6f6f6;
 }
 
+.es-content-body p,
+.es-footer-body p,
+.es-header-body p,
+.es-infoblock p {
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
 .es-header {
     background-color: transparent;
-    background-repeat: repeat;
-    background-position: center top;
 }
 
 .es-header-body {
     background-color: #ffffff;
 }
 
-.es-header-body p,
-.es-header-body ul li,
-.es-header-body ol li {
+.es-header-body p {
     color: #333333;
     font-size: 14px;
 }
 
 .es-header-body a {
-    color: #2cb543;
+    color: #1376c8;
     font-size: 14px;
 }
 
@@ -337,45 +380,35 @@ a {
     background-color: #ffffff;
 }
 
-.es-content-body p,
-.es-content-body ul li,
-.es-content-body ol li {
-    color: #333333;
-    font-size: 14px;
-}
-
 .es-content-body a {
-    color: #2cb543;
+    color: #1376c8;
     font-size: 14px;
 }
 
 .es-footer {
     background-color: transparent;
-    background-repeat: repeat;
-    background-position: center top;
 }
 
 .es-footer-body {
     background-color: #ffffff;
 }
 
-.es-footer-body p,
-.es-footer-body ul li,
-.es-footer-body ol li {
+.es-footer-body p {
     color: #333333;
     font-size: 14px;
 }
 
 .es-footer-body a {
-    color: #ffffff;
+    color: #1376c8;
     font-size: 14px;
 }
 
-.es-infoblock,
-.es-infoblock p,
-.es-infoblock ul li,
-.es-infoblock ol li {
-    line-height: 120%;
+.es-content-body p {
+    color: #333333;
+    font-size: 14px;
+}
+
+.es-infoblock p {
     font-size: 12px;
     color: #cccccc;
 }
@@ -386,42 +419,87 @@ a {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: normal;
+    line-height: 120%;
     color: #333333;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-style: normal;
     font-weight: normal;
+    line-height: 120%;
     color: #333333;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 28px;
     font-style: normal;
     font-weight: normal;
+    line-height: 120%;
     color: #333333;
 }
 
 .es-header-body h1 a,
 .es-content-body h1 a,
 .es-footer-body h1 a {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .es-header-body h2 a,
 .es-content-body h2 a,
 .es-footer-body h2 a {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .es-header-body h3 a,
 .es-content-body h3 a,
 .es-footer-body h3 a {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: #333333;
+}
+
+h5 {
     font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: #333333;
+}
+
+h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: #333333;
+}
+
+.es-header-body h4 a,
+.es-content-body h4 a,
+.es-footer-body h4 a {
+    font-size: 24px;
+}
+
+.es-header-body h5 a,
+.es-content-body h5 a,
+.es-footer-body h5 a {
+    font-size: 20px;
+}
+
+.es-header-body h6 a,
+.es-content-body h6 a,
+.es-footer-body h6 a {
+    font-size: 16px;
 }
 
 a.es-button,
@@ -429,86 +507,240 @@ button.es-button {
     padding: 10px 20px 10px 20px;
     display: inline-block;
     background: #31cb4b;
-    border-radius: 30px;
-    font-size: 18px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 14px;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 120%;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none !important;
     width: auto;
     text-align: center;
+    letter-spacing: 0;
+    mso-padding-alt: 0;
+    mso-border-alt: 10px solid #31cb4b;
 }
 
 .es-button-border {
-    border-style: solid solid solid solid;
+    border-style: solid;
     border-color: #2cb543 #2cb543 #2cb543 #2cb543;
-    background: #2cb543;
+    background: #31cb4b;
     border-width: 0px 0px 2px 0px;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px 15px 15px 15px;
     width: auto;
-    mso-border-alt: 10px;
+}
+
+.es-button img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.es-fw,
+.es-fw .es-button {
+    display: block;
+}
+
+.es-il,
+.es-il .es-button {
+    display: inline-block;
+}
+
+.es-text-rtl h1,
+.es-text-rtl h2,
+.es-text-rtl h3,
+.es-text-rtl h4,
+.es-text-rtl h5,
+.es-text-rtl h6,
+.es-text-rtl input,
+.es-text-rtl label,
+.es-text-rtl textarea,
+.es-text-rtl p,
+.es-text-rtl ol,
+.es-text-rtl ul,
+.es-text-rtl .es-menu a,
+.es-text-rtl .es-table {
+    direction: rtl;
+}
+
+.es-text-ltr h1,
+.es-text-ltr h2,
+.es-text-ltr h3,
+.es-text-ltr h4,
+.es-text-ltr h5,
+.es-text-ltr h6,
+.es-text-ltr input,
+.es-text-ltr label,
+.es-text-ltr textarea,
+.es-text-ltr p,
+.es-text-ltr ol,
+.es-text-ltr ul,
+.es-text-ltr .es-menu a,
+.es-text-ltr .es-table {
+    direction: ltr;
+}
+
+.es-text-rtl ol,
+.es-text-rtl ul {
+    padding: 0px 40px 0px 0px;
+}
+
+.es-text-ltr ul,
+.es-text-ltr ol {
+    padding: 0px 0px 0px 40px;
 }
 
 .msohide {
     mso-hide: all;
 }
 
-/* RESPONSIVE STYLES Please do not delete and edit CSS styles below. If you don't need responsive layout, please delete this section. */
+/*
+  RESPONSIVE STYLES
+  Please do not delete and edit CSS styles below.
+
+  If you don't need responsive layout, please delete this section.
+  */
+.es-p20t {
+    padding-top: 20px;
+}
+
+.es-p20r {
+    padding-right: 20px;
+}
+
+.es-p20l {
+    padding-left: 20px;
+}
+
+.es-p20b {
+    padding-bottom: 20px;
+}
+
+.es-p-default {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px !important;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 28px !important;
+        text-align: left;
+    }
+
+    .es-m-p20b {
+        padding-bottom: 20px !important;
+    }
+
+    .es-p-default {}
+
+    *[class="gmail-fix"] {
+        display: none !important;
+    }
 
     p,
-    ul li,
-    ol li,
     a {
         line-height: 150% !important;
     }
 
     h1,
+    h1 a {
+        line-height: 120% !important;
+    }
+
     h2,
+    h2 a {
+        line-height: 120% !important;
+    }
+
     h3,
-    h1 a,
-    h2 a,
     h3 a {
-        line-height: 120%;
+        line-height: 120% !important;
     }
 
-    h1 {
-        font-size: 30px !important;
-        text-align: left;
+    h4,
+    h4 a {
+        line-height: 120% !important;
     }
 
-    h2 {
+    h5,
+    h5 a {
+        line-height: 120% !important;
+    }
+
+    h6,
+    h6 a {
+        line-height: 120% !important;
+    }
+
+    .es-header-body p {}
+
+    .es-content-body p {}
+
+    .es-footer-body p {}
+
+    .es-infoblock p {}
+
+    h4 {
         font-size: 24px !important;
         text-align: left;
     }
 
-    h3 {
+    h5 {
         font-size: 20px !important;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 16px !important;
         text-align: left;
     }
 
     .es-header-body h1 a,
     .es-content-body h1 a,
     .es-footer-body h1 a {
-        font-size: 30px !important;
-        text-align: left;
+        font-size: 40px !important;
     }
 
     .es-header-body h2 a,
     .es-content-body h2 a,
     .es-footer-body h2 a {
-        font-size: 24px !important;
-        text-align: left;
+        font-size: 32px !important;
     }
 
     .es-header-body h3 a,
     .es-content-body h3 a,
     .es-footer-body h3 a {
+        font-size: 28px !important;
+    }
+
+    .es-header-body h4 a,
+    .es-content-body h4 a,
+    .es-footer-body h4 a {
+        font-size: 24px !important;
+    }
+
+    .es-header-body h5 a,
+    .es-content-body h5 a,
+    .es-footer-body h5 a {
         font-size: 20px !important;
-        text-align: left;
+    }
+
+    .es-header-body h6 a,
+    .es-content-body h6 a,
+    .es-footer-body h6 a {
+        font-size: 16px !important;
     }
 
     .es-menu td a {
@@ -516,55 +748,62 @@ button.es-button {
     }
 
     .es-header-body p,
-    .es-header-body ul li,
-    .es-header-body ol li,
     .es-header-body a {
         font-size: 14px !important;
     }
 
     .es-content-body p,
-    .es-content-body ul li,
-    .es-content-body ol li,
     .es-content-body a {
         font-size: 14px !important;
     }
 
     .es-footer-body p,
-    .es-footer-body ul li,
-    .es-footer-body ol li,
     .es-footer-body a {
         font-size: 14px !important;
     }
 
     .es-infoblock p,
-    .es-infoblock ul li,
-    .es-infoblock ol li,
     .es-infoblock a {
         font-size: 12px !important;
-    }
-
-    *[class="gmail-fix"] {
-        display: none !important;
     }
 
     .es-m-txt-c,
     .es-m-txt-c h1,
     .es-m-txt-c h2,
-    .es-m-txt-c h3 {
+    .es-m-txt-c h3,
+    .es-m-txt-c h4,
+    .es-m-txt-c h5,
+    .es-m-txt-c h6 {
         text-align: center !important;
     }
 
     .es-m-txt-r,
     .es-m-txt-r h1,
     .es-m-txt-r h2,
-    .es-m-txt-r h3 {
+    .es-m-txt-r h3,
+    .es-m-txt-r h4,
+    .es-m-txt-r h5,
+    .es-m-txt-r h6 {
         text-align: right !important;
+    }
+
+    .es-m-txt-j,
+    .es-m-txt-j h1,
+    .es-m-txt-j h2,
+    .es-m-txt-j h3,
+    .es-m-txt-j h4,
+    .es-m-txt-j h5,
+    .es-m-txt-j h6 {
+        text-align: justify !important;
     }
 
     .es-m-txt-l,
     .es-m-txt-l h1,
     .es-m-txt-l h2,
-    .es-m-txt-l h3 {
+    .es-m-txt-l h3,
+    .es-m-txt-l h4,
+    .es-m-txt-l h5,
+    .es-m-txt-l h6 {
         text-align: left !important;
     }
 
@@ -574,13 +813,48 @@ button.es-button {
         display: inline !important;
     }
 
-    .es-button-border {
-        display: inline-block !important;
+    .es-m-txt-r .rollover:hover .rollover-second,
+    .es-m-txt-c .rollover:hover .rollover-second,
+    .es-m-txt-l .rollover:hover .rollover-second {
+        display: inline !important;
+    }
+
+    .es-m-txt-r .rollover span,
+    .es-m-txt-c .rollover span,
+    .es-m-txt-l .rollover span {
+        line-height: 0 !important;
+        font-size: 0 !important;
+        display: block;
+    }
+
+    .es-spacer {
+        display: inline-table;
     }
 
     a.es-button,
     button.es-button {
-        font-size: 18px !important;
+        font-size: 14px !important;
+        padding: 10px 20px 10px 20px !important;
+        line-height: 120% !important;
+    }
+
+    a.es-button,
+    button.es-button,
+    .es-button-border {
+        display: inline-block !important;
+    }
+
+    .es-m-fw,
+    .es-m-fw.es-fw,
+    .es-m-fw .es-button {
+        display: block !important;
+    }
+
+    .es-m-il,
+    .es-m-il .es-button,
+    .es-social,
+    .es-social td,
+    .es-menu.es-table-not-adapt {
         display: inline-block !important;
     }
 
@@ -600,38 +874,9 @@ button.es-button {
         max-width: 600px !important;
     }
 
-    .es-adapt-td {
-        display: block !important;
-        width: 100% !important;
-    }
-
     .adapt-img {
         width: 100% !important;
         height: auto !important;
-    }
-
-    .es-m-p0 {
-        padding: 0px !important;
-    }
-
-    .es-m-p0r {
-        padding-right: 0px !important;
-    }
-
-    .es-m-p0l {
-        padding-left: 0px !important;
-    }
-
-    .es-m-p0t {
-        padding-top: 0px !important;
-    }
-
-    .es-m-p0b {
-        padding-bottom: 0 !important;
-    }
-
-    .es-m-p20b {
-        padding-bottom: 20px !important;
     }
 
     .es-mobile-hidden,
@@ -639,14 +884,13 @@ button.es-button {
         display: none !important;
     }
 
-    tr.es-desk-hidden,
-    td.es-desk-hidden,
-    table.es-desk-hidden {
+    .es-desk-hidden {
         width: auto !important;
         overflow: visible !important;
         float: none !important;
         max-height: inherit !important;
         line-height: inherit !important;
+        display: table-row !important;
     }
 
     tr.es-desk-hidden {
@@ -665,29 +909,25 @@ button.es-button {
         width: 1% !important;
     }
 
+    .es-adapt-td {
+        display: block !important;
+        width: 100% !important;
+    }
+
     table.es-table-not-adapt,
     .esd-block-html table {
         width: auto !important;
     }
 
-    table.es-social {
-        display: inline-block !important;
-    }
-
-    table.es-social td {
-        display: inline-block !important;
-    }
-
-    .es-desk-hidden {
-        display: table-row !important;
-        width: auto !important;
-        overflow: visible !important;
-        max-height: inherit !important;
+    .h-auto {
+        height: auto !important;
     }
 }
 
-/* END RESPONSIVE STYLES */
-html,
-body {
-    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+/*
+  END RESPONSIVE STYLES
+*/
+ul li,
+ol li {
+    margin-left: 0;
 }
