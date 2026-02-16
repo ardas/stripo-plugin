@@ -1,0 +1,21 @@
+{
+   "stripo/amp-validator-service": "20260204-1807_d3ebce0",
+   "stripo/emple-loadbalancer": "20231128-1957",
+   "stripo/patches-service": "20260204-1806_d3ebce0",
+   "stripo/screenshot-service": "20260204-1802_d3ebce0",
+   "stripo/stripe-html-cleaner-service": "20260206-1533_3de4907",
+   "stripo/stripe-html-gen-service": "20260204-1821_d3ebce0",
+   "stripo/stripo-plugin-api-gateway": "20260206-1816_87e18b1",
+   "stripo/stripo-plugin-custom-blocks-service": "20260204-1815_d3ebce0",
+   "stripo/stripo-plugin-details-service": "20260204-1813_d3ebce0",
+   "stripo/stripo-plugin-documents-service": "20260206-1533_3de4907",
+   "stripo/stripo-plugin-drafts-service": "20260204-1814_d3ebce0",
+   "stripo/stripo-plugin-image-bank-service": "20260206-1533_3de4907",
+   "stripo/stripo-plugin-proxy-service": "20260204-1817_d3ebce0",
+   "stripo/stripo-plugin-statistics-service": "20260204-1815_d3ebce0",
+   "stripo/stripo-security-service": "20260204-1811_d3ebce0",
+   "stripo/stripo-timer-api": "20260204-1823_d3ebce0",
+   "stripo/emple-ui": "20260208-1917_cd205b2",
+   "stripo/ai-service": "20260206-1819_87e18b1",
+   "stripo/countdowntimer": "20260202-r1541_a37f4c9_master"
+}
