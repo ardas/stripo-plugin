@@ -270,8 +270,6 @@
   "hrefControl.option.mail.description": "mailto:",
   "hrefControl.option.file": "File",
   "hrefControl.option.file.description": "ftp, ftps",
-  "hrefControl.option.skype": "Skype",
-  "hrefControl.option.skype.description": "skype:",
   "hrefControl.option.tel": "Tel",
   "hrefControl.option.tel.description": "tel:",
   "hrefControl.option.sms": "Sms",

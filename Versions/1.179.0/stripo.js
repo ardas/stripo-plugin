@@ -49,9 +49,9 @@ if (!window.Stripo.loaded) {
         (!window.$LAB) && addResource('assets/js/LAB.min.js', 'scripts0', true);
         (!window._babelPolyfill) && addResource('assets/imageeditor/babel_polyfill.js', 'scripts1', true);
         (!window.Zone && !curScript.hasAttribute('angular-app')) && addResource('assets/imageeditor/zone.min.js', 'scripts1', true);
-        addResource('stripodeps.f4ac89861aaba61e5cd4.js', 'scripts2', true);
+        addResource('stripodeps.71bd3c54c40a295faffc.js', 'scripts2', true);
         addResource('assets/imageeditor/scripts.min.js', 'scripts3', true);
-        addResource('main.f4ac89861aaba61e5cd4.js', 'scripts4', true);
+        addResource('main.71bd3c54c40a295faffc.js', 'scripts4', true);
         if (Array.isArray(window.Stripo.externalScripts)) {
             window.Stripo['scripts5'] = window.Stripo.externalScripts;
             sp('scriptsMaxOrder', 5);
