@@ -1,0 +1,929 @@
+@font-face {
+    font-family: 'gothic_modern';
+    src: local('gothic_modern Regular'), local('gothicmodern'),
+    url('gothicmodern.woff2') format('woff2'),
+    url('gothicmodern.woff') format('woff'),
+    url('gothicmodern.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sweet Sorrow';
+    src: local('Sweet Sorrow'), local('SweetSorrow'),
+    url('SweetSorrow.woff2') format('woff2'),
+    url('SweetSorrow.woff') format('woff'),
+    url('SweetSorrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metro Grunge';
+    src: local('Metro Grunge'), local('MetroGrunge'),
+    url('MetroGrunge.woff2') format('woff2'),
+    url('MetroGrunge.woff') format('woff'),
+    url('MetroGrunge.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Humblle Rought All Caps';
+    src: local('Humblle Rought All Caps'), local('HumblleRoughtAllCaps'),
+    url('HumblleRoughtAllCaps.woff2') format('woff2'),
+    url('HumblleRoughtAllCaps.woff') format('woff'),
+    url('HumblleRoughtAllCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Bravery Lite Ver';
+    src: local('TheBravery Lite Ver'), local('TheBraveryLiteVer'),
+    url('TheBraveryLiteVer.woff2') format('woff2'),
+    url('TheBraveryLiteVer.woff') format('woff'),
+    url('TheBraveryLiteVer.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'INKFERNO';
+    src: local('INKFERNO'),
+    url('INKFERNO.woff2') format('woff2'),
+    url('INKFERNO.woff') format('woff'),
+    url('INKFERNO.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'King Basil Lite';
+    src: local('King Basil Lite'), local('KingBasilLite-Regular'),
+    url('KingBasilLite-Regular.woff2') format('woff2'),
+    url('KingBasilLite-Regular.woff') format('woff'),
+    url('KingBasilLite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Casual';
+    src: local('Casual-Regular'),
+    url('Casual-Regular.woff2') format('woff2'),
+    url('Casual-Regular.woff') format('woff'),
+    url('Casual-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caleb';
+    src: local('Caleb'),
+    url('Caleb.woff2') format('woff2'),
+    url('Caleb.woff') format('woff'),
+    url('Caleb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Regular'), local('Decalotype-Regular'),
+    url('Decalotype-Regular.woff2') format('woff2'),
+    url('Decalotype-Regular.woff') format('woff'),
+    url('Decalotype-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Befolk';
+    src: local('Befolk  Regular'), local('Befolk-Regular'),
+    url('Befolk-Regular.woff2') format('woff2'),
+    url('Befolk-Regular.woff') format('woff'),
+    url('Befolk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LullaBelle';
+    src: local('LullaBelle'),
+    url('LullaBelle.woff2') format('woff2'),
+    url('LullaBelle.woff') format('woff'),
+    url('LullaBelle.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Humger';
+    src: local('Humger'), local('HumgerRegular'),
+    url('HumgerRegular.woff2') format('woff2'),
+    url('HumgerRegular.woff') format('woff'),
+    url('HumgerRegular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Setta Script';
+    src: local('Setta Script Regular'), local('SettaScript-Regular'),
+    url('SettaScript-Regular.woff2') format('woff2'),
+    url('SettaScript-Regular.woff') format('woff'),
+    url('SettaScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype Medium';
+    src: local('Decalotype Medium Italic'), local('Decalotype-MediumItalic'),
+    url('Decalotype-MediumItalic.woff2') format('woff2'),
+    url('Decalotype-MediumItalic.woff') format('woff'),
+    url('Decalotype-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Black Mask';
+    src: local('Black Mask Press'), local('BlackMask-Press'),
+    url('BlackMask-Press.woff2') format('woff2'),
+    url('BlackMask-Press.woff') format('woff'),
+    url('BlackMask-Press.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Bold Italic'), local('Decalotype-BoldItalic'),
+    url('Decalotype-BoldItalic.woff2') format('woff2'),
+    url('Decalotype-BoldItalic.woff') format('woff'),
+    url('Decalotype-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype Light';
+    src: local('Decalotype Light Italic'), local('Decalotype-LightItalic'),
+    url('Decalotype-LightItalic.woff2') format('woff2'),
+    url('Decalotype-LightItalic.woff') format('woff'),
+    url('Decalotype-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Happy Camper';
+    src: local('Happy Camper Regular'), local('Happy-Camper-Regular'),
+    url('Happy-Camper-Regular.woff2') format('woff2'),
+    url('Happy-Camper-Regular.woff') format('woff'),
+    url('Happy-Camper-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype SemiBold';
+    src: local('Decalotype SemiBold Italic'), local('Decalotype-SemiBoldItalic'),
+    url('Decalotype-SemiBoldItalic.woff2') format('woff2'),
+    url('Decalotype-SemiBoldItalic.woff') format('woff'),
+    url('Decalotype-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BRUX';
+    src: local('BRUX'), local('BRUX-Regular'),
+    url('BRUX-Regular.woff2') format('woff2'),
+    url('BRUX-Regular.woff') format('woff'),
+    url('BRUX-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Surabanglus';
+    src: local('Surabanglus Normal'), local('Surabanglus'),
+    url('Surabanglus.woff2') format('woff2'),
+    url('Surabanglus.woff') format('woff'),
+    url('Surabanglus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hovel';
+    src: local('hovel'),
+    url('hovel.woff2') format('woff2'),
+    url('hovel.woff') format('woff'),
+    url('hovel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype ExtraBold';
+    src: local('Decalotype ExtraBold Italic'), local('Decalotype-ExtraBoldItalic'),
+    url('Decalotype-ExtraBoldItalic.woff2') format('woff2'),
+    url('Decalotype-ExtraBoldItalic.woff') format('woff'),
+    url('Decalotype-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Italic'), local('Decalotype-Italic'),
+    url('Decalotype-Italic.woff2') format('woff2'),
+    url('Decalotype-Italic.woff') format('woff'),
+    url('Decalotype-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Medium'), local('Decalotype-Medium'),
+    url('Decalotype-Medium.woff2') format('woff2'),
+    url('Decalotype-Medium.woff') format('woff'),
+    url('Decalotype-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monk';
+    src: local('Monk'),
+    url('Monk.woff2') format('woff2'),
+    url('Monk.woff') format('woff'),
+    url('Monk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heroic';
+    src: local('Heroic'),
+    url('Heroic.woff2') format('woff2'),
+    url('Heroic.woff') format('woff'),
+    url('Heroic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZEMBOOD';
+    src: local('ZEMBOOD'),
+    url('ZEMBOOD.woff2') format('woff2'),
+    url('ZEMBOOD.woff') format('woff'),
+    url('ZEMBOOD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype SemiBold'), local('Decalotype-SemiBold'),
+    url('Decalotype-SemiBold.woff2') format('woff2'),
+    url('Decalotype-SemiBold.woff') format('woff'),
+    url('Decalotype-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Light'), local('Decalotype-Light'),
+    url('Decalotype-Light.woff2') format('woff2'),
+    url('Decalotype-Light.woff') format('woff'),
+    url('Decalotype-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Bold'), local('Decalotype-Bold'),
+    url('Decalotype-Bold.woff2') format('woff2'),
+    url('Decalotype-Bold.woff') format('woff'),
+    url('Decalotype-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Broken Wings';
+    src: local('Broken Wings'), local('BrokenWings'),
+    url('BrokenWings.woff2') format('woff2'),
+    url('BrokenWings.woff') format('woff'),
+    url('BrokenWings.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype ExtraBold'), local('Decalotype-ExtraBold'),
+    url('Decalotype-ExtraBold.woff2') format('woff2'),
+    url('Decalotype-ExtraBold.woff') format('woff'),
+    url('Decalotype-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype Black';
+    src: local('Decalotype Black Italic'), local('Decalotype-BlackItalic'),
+    url('Decalotype-BlackItalic.woff2') format('woff2'),
+    url('Decalotype-BlackItalic.woff') format('woff'),
+    url('Decalotype-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ZVIRO_DEMO1';
+    src: local('ZVIRO_DEMO1'), local('ZVIRODEMO1'),
+    url('ZVIRODEMO1.woff2') format('woff2'),
+    url('ZVIRODEMO1.woff') format('woff'),
+    url('ZVIRODEMO1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Black'), local('Decalotype-Black'),
+    url('Decalotype-Black.woff2') format('woff2'),
+    url('Decalotype-Black.woff') format('woff'),
+    url('Decalotype-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype SemiBold'), local('Decalotype-SemiBold'),
+    url('Decalotype-SemiBold_1.woff2') format('woff2'),
+    url('Decalotype-SemiBold_1.woff') format('woff'),
+    url('Decalotype-SemiBold_1.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype Medium';
+    src: local('Decalotype Medium Italic'), local('Decalotype-MediumItalic'),
+    url('Decalotype-MediumItalic_1.woff2') format('woff2'),
+    url('Decalotype-MediumItalic_1.woff') format('woff'),
+    url('Decalotype-MediumItalic_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bajern';
+    src: local('Bajern Regular'), local('Bajern-Regular'),
+    url('Bajern-Regular.woff2') format('woff2'),
+    url('Bajern-Regular.woff') format('woff'),
+    url('Bajern-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Black'), local('Akrobat-Black'),
+    url('Akrobat-Black.woff2') format('woff2'),
+    url('Akrobat-Black.woff') format('woff'),
+    url('Akrobat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Bold Italic'), local('Decalotype-BoldItalic'),
+    url('Decalotype-BoldItalic_1.woff2') format('woff2'),
+    url('Decalotype-BoldItalic_1.woff') format('woff'),
+    url('Decalotype-BoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Black'), local('Decalotype-Black'),
+    url('Decalotype-Black_1.woff2') format('woff2'),
+    url('Decalotype-Black_1.woff') format('woff'),
+    url('Decalotype-Black_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Setta Script';
+    src: local('Setta Script Regular'), local('SettaScript-Regular'),
+    url('SettaScript-Regular_1.woff2') format('woff2'),
+    url('SettaScript-Regular_1.woff') format('woff'),
+    url('SettaScript-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monk';
+    src: local('Monk'),
+    url('Monk_1.woff2') format('woff2'),
+    url('Monk_1.woff') format('woff'),
+    url('Monk_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black Willow Rough';
+    src: local('Black Willow Rough'), local('BlackWillow-Rough'),
+    url('BlackWillow-Rough.woff2') format('woff2'),
+    url('BlackWillow-Rough.woff') format('woff'),
+    url('BlackWillow-Rough.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Somatic Rounded';
+    src: local('Somatic Rounded'), local('Somatic-Rounded'),
+    url('Somatic-Rounded.woff2') format('woff2'),
+    url('Somatic-Rounded.woff') format('woff'),
+    url('Somatic-Rounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype Black';
+    src: local('Decalotype Black Italic'), local('Decalotype-BlackItalic'),
+    url('Decalotype-BlackItalic_1.woff2') format('woff2'),
+    url('Decalotype-BlackItalic_1.woff') format('woff'),
+    url('Decalotype-BlackItalic_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fibre Vintage';
+    src: local('Fibre Vintage'), local('FibreVintage'),
+    url('FibreVintage.woff2') format('woff2'),
+    url('FibreVintage.woff') format('woff'),
+    url('FibreVintage.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Medium'), local('Decalotype-Medium'),
+    url('Decalotype-Medium_1.woff2') format('woff2'),
+    url('Decalotype-Medium_1.woff') format('woff'),
+    url('Decalotype-Medium_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Light'), local('Akrobat-Light'),
+    url('Akrobat-Light.woff2') format('woff2'),
+    url('Akrobat-Light.woff') format('woff'),
+    url('Akrobat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Regular'), local('Decalotype-Regular'),
+    url('Decalotype-Regular_1.woff2') format('woff2'),
+    url('Decalotype-Regular_1.woff') format('woff'),
+    url('Decalotype-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wild Youth';
+    src: local('Wild Youth Regular'), local('WildYouth-Regular'),
+    url('WildYouth-Regular.woff2') format('woff2'),
+    url('WildYouth-Regular.woff') format('woff'),
+    url('WildYouth-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothic_modern';
+    src: local('gothic_modern'), local('Untitled'),
+    url('Untitled.woff2') format('woff2'),
+    url('Untitled.woff') format('woff'),
+    url('Untitled.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype SemiBold';
+    src: local('Decalotype SemiBold Italic'), local('Decalotype-SemiBoldItalic'),
+    url('Decalotype-SemiBoldItalic_1.woff2') format('woff2'),
+    url('Decalotype-SemiBoldItalic_1.woff') format('woff'),
+    url('Decalotype-SemiBoldItalic_1.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'INKFERNO';
+    src: local('INKFERNO'),
+    url('INKFERNO_1.woff2') format('woff2'),
+    url('INKFERNO_1.woff') format('woff'),
+    url('INKFERNO_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Befolk';
+    src: local('Befolk  Regular'), local('Befolk-Regular'),
+    url('Befolk-Regular_1.woff2') format('woff2'),
+    url('Befolk-Regular_1.woff') format('woff'),
+    url('Befolk-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'King Basil Lite';
+    src: local('King Basil Lite'), local('KingBasilLite-Regular'),
+    url('KingBasilLite-Regular_1.woff2') format('woff2'),
+    url('KingBasilLite-Regular_1.woff') format('woff'),
+    url('KingBasilLite-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Broken Wings';
+    src: local('Broken Wings'), local('BrokenWings'),
+    url('BrokenWings_1.woff2') format('woff2'),
+    url('BrokenWings_1.woff') format('woff'),
+    url('BrokenWings_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Regular'), local('Akrobat-Regular'),
+    url('Akrobat-Regular.woff2') format('woff2'),
+    url('Akrobat-Regular.woff') format('woff'),
+    url('Akrobat-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Bravery Lite Ver.';
+    src: local('The Bravery Lite Ver.'), local('TheBraveryLiteVer.'),
+    url('TheBraveryLiteVer_1.woff2') format('woff2'),
+    url('TheBraveryLiteVer_1.woff') format('woff'),
+    url('TheBraveryLiteVer_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Humblle Rought All Caps';
+    src: local('Humblle Rought All Caps'), local('HumblleRoughtAllCaps'),
+    url('HumblleRoughtAllCaps_1.woff2') format('woff2'),
+    url('HumblleRoughtAllCaps_1.woff') format('woff'),
+    url('HumblleRoughtAllCaps_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Equable';
+    src: local('Equable'),
+    url('Equable.woff2') format('woff2'),
+    url('Equable.woff') format('woff'),
+    url('Equable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black Willow';
+    src: local('Black Willow Regular'), local('BlackWillow-Regular'),
+    url('BlackWillow-Regular.woff2') format('woff2'),
+    url('BlackWillow-Regular.woff') format('woff'),
+    url('BlackWillow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype ExtraBold'), local('Decalotype-ExtraBold'),
+    url('Decalotype-ExtraBold_1.woff2') format('woff2'),
+    url('Decalotype-ExtraBold_1.woff') format('woff'),
+    url('Decalotype-ExtraBold_1.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight'),
+    url('Akrobat-ExtraLight.woff2') format('woff2'),
+    url('Akrobat-ExtraLight.woff') format('woff'),
+    url('Akrobat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Black Mask';
+    src: local('Black Mask Press'), local('BlackMask-Press'),
+    url('BlackMask-Press_1.woff2') format('woff2'),
+    url('BlackMask-Press_1.woff') format('woff'),
+    url('BlackMask-Press_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Bold'), local('Decalotype-Bold'),
+    url('Decalotype-Bold_1.woff2') format('woff2'),
+    url('Decalotype-Bold_1.woff') format('woff'),
+    url('Decalotype-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Buffalo Script';
+    src: local('Buffalo Script Regular'), local('BuffaloScript-Regular'),
+    url('BuffaloScript-Regular.woff2') format('woff2'),
+    url('BuffaloScript-Regular.woff') format('woff'),
+    url('BuffaloScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Humger';
+    src: local('Humger'), local('HumgerRegular'),
+    url('HumgerRegular_1.woff2') format('woff2'),
+    url('HumgerRegular_1.woff') format('woff'),
+    url('HumgerRegular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Friedrichshain';
+    src: local('Friedrichshain Regular'), local('Friedrichshain-Regular'),
+    url('Friedrichshain-Regular.woff2') format('woff2'),
+    url('Friedrichshain-Regular.woff') format('woff'),
+    url('Friedrichshain-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Thin'), local('Akrobat-Thin'),
+    url('Akrobat-Thin.woff2') format('woff2'),
+    url('Akrobat-Thin.woff') format('woff'),
+    url('Akrobat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metro Grunge';
+    src: local('Metro Grunge'), local('MetroGrunge'),
+    url('MetroGrunge_1.woff2') format('woff2'),
+    url('MetroGrunge_1.woff') format('woff'),
+    url('MetroGrunge_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flow';
+    src: local('Flow'),
+    url('Flow.woff2') format('woff2'),
+    url('Flow.woff') format('woff'),
+    url('Flow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype ExtraBold';
+    src: local('Decalotype ExtraBold Italic'), local('Decalotype-ExtraBoldItalic'),
+    url('Decalotype-ExtraBoldItalic_1.woff2') format('woff2'),
+    url('Decalotype-ExtraBoldItalic_1.woff') format('woff'),
+    url('Decalotype-ExtraBoldItalic_1.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Light'), local('Decalotype-Light'),
+    url('Decalotype-Light_1.woff2') format('woff2'),
+    url('Decalotype-Light_1.woff') format('woff'),
+    url('Decalotype-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BRUX';
+    src: local('BRUX Regular'), local('BRUX-Regular'),
+    url('BRUX-Regular_1.woff2') format('woff2'),
+    url('BRUX-Regular_1.woff') format('woff'),
+    url('BRUX-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'),
+    url('Akrobat-ExtraBold.woff2') format('woff2'),
+    url('Akrobat-ExtraBold.woff') format('woff'),
+    url('Akrobat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Decalotype Light';
+    src: local('Decalotype Light Italic'), local('Decalotype-LightItalic'),
+    url('Decalotype-LightItalic_1.woff2') format('woff2'),
+    url('Decalotype-LightItalic_1.woff') format('woff'),
+    url('Decalotype-LightItalic_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Decalotype';
+    src: local('Decalotype Italic'), local('Decalotype-Italic'),
+    url('Decalotype-Italic_1.woff2') format('woff2'),
+    url('Decalotype-Italic_1.woff') format('woff'),
+    url('Decalotype-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sweet Sorrow';
+    src: local('Sweet Sorrow'), local('SweetSorrow'),
+    url('SweetSorrow_1.woff2') format('woff2'),
+    url('SweetSorrow_1.woff') format('woff'),
+    url('SweetSorrow_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Bold'), local('Akrobat-Bold'),
+    url('Akrobat-Bold.woff2') format('woff2'),
+    url('Akrobat-Bold.woff') format('woff'),
+    url('Akrobat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),
+    url('Akrobat-SemiBold.woff2') format('woff2'),
+    url('Akrobat-SemiBold.woff') format('woff'),
+    url('Akrobat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NikolaidisHand';
+    src: local('NikolaidisHand'),
+    url('NikolaidisHand.woff2') format('woff2'),
+    url('NikolaidisHand.woff') format('woff'),
+    url('NikolaidisHand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fibre Vintage';
+    src: local('Fibre Vintage'), local('FibreVintage'),
+    url('FibreVintage_1.woff2') format('woff2'),
+    url('FibreVintage_1.woff') format('woff'),
+    url('FibreVintage_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BRUX';
+    src: local('BRUX Regular'), local('BRUX-Regular'),
+    url('BRUX-Regular_2.woff2') format('woff2'),
+    url('BRUX-Regular_2.woff') format('woff'),
+    url('BRUX-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BRUX';
+    src: local('BRUX Regular'), local('BRUX-Regular'),
+    url('BRUX-Regular_3.woff2') format('woff2'),
+    url('BRUX-Regular_3.woff') format('woff'),
+    url('BRUX-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Playball';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playball'), local('Playball-Regular'), url(https://fonts.gstatic.com/s/playball/v7/qxC1Yj_4IUZ_PO35Va79QxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Playball';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playball'), local('Playball-Regular'), url(https://fonts.gstatic.com/s/playball/v7/sSjR6AJRrIl2FxjhncYng_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/lHpQDMs3kBv7PKZOlbpwifY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/c28rH3kclCLEuIsGhOg7evY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/RdfS2KomDWXvet4_dZQehvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/9NqNYV_LP7zlAF8jHr7f1vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/cycBf3mfbGkh66G5NhszPQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
